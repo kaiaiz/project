@@ -1,0 +1,211 @@
+<!--1.获取内容
+2.计算剩余字数
+3.最大值
+4.当按键按下时提交数据
+5.保存数据后清空
+6.创建元素节点，在文本域前插入。-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            width: 1000px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        ul li {
+            width: 100%;
+            height: 100px;
+            border-bottom: 2px solid green;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: #265380;
+        }
+
+        ul li div.note {
+            width: 100px;
+            height: 100%;
+            background-color: #224b73;
+            float: left;
+            font-size: 90px;
+            text-align: center;
+            color: #fff;
+        }
+
+        ul li div.text {
+            float: left;
+            height: 100%;
+            flex-grow: 1;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+
+        div.box {
+            width: 1000px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 60px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #1f4266;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #265380;
+        }
+
+        input {
+            outline: none;
+            width: 100px;
+            height: 30px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+            padding: 5px 2px 0px 6px;
+            color: #c8e1fa;
+            background-color: #2a5b8c;
+            box-shadow: inset 0 2px 4px 0 rgba(42, 38, 38, 0.04);
+            border-radius: 10%;
+        }
+
+        input:focus {
+            border-color: #fa7d3c;
+        }
+
+        textarea {
+            padding: 5px 2px 0px 6px;
+            color: #c8e1fa;
+            font-size: 12px;
+            width: 900px;
+            height: 80px;
+            line-height: 18px;
+            outline: none;
+            resize: none;
+            margin: 0 auto 10px;
+            background-color: #2a5b8c;
+            box-shadow: inset 0 2px 4px 0 rgba(42, 38, 38, 0.04);
+        }
+
+        textarea::-webkit-input-placeholder {
+/*            修改默认字符的颜色*/
+            color:antiquewhite;
+        }
+
+        textarea:focus {
+            border-color: #fa7d3c;
+        }
+
+        span {
+            color: red;
+        }
+
+        a {
+            width: 70px;
+            height: 28px;
+            display: block;
+            float: right;
+            color: #fff;
+            text-align: center;
+            line-height: 28px;
+            font-size: 14px;
+            border-radius: 2px;
+            vertical-align: middle;
+            background-color: #3a8ee2;
+            text-decoration: none;
+        }
+
+    </style>
+    <script>
+        function handle() {
+            let text = document.querySelector('textarea');
+            let number = document.querySelector('span');
+            let boxDiv = document.querySelector('div.box');
+            let ulNode = document.querySelector('ul');
+            let inputNode = document.querySelector('input');
+            let maxLen = text.maxLength;
+            let value;
+
+            function submit() {
+                let liNode = document.querySelector('li'); //由于每次更新所以需要在新的li节点更新后获取元素
+                let nameForm = inputNode.value;
+                inputNode.value = null;
+                value = text.value;
+                text.value = null;
+                /*let box = document.createElement('div');
+                box.style.cssText = 'width:100px;height:100px;background-color:yellow;transition:all .6s;';
+                box.innerText = value;
+                boxDiv.insertBefore(box, text);*/
+                let box = liNode.cloneNode(true);
+                let name = box.querySelector('div.text>h3');
+                let conversation = box.querySelector('div.text>p');
+                name.innerText = '@' + nameForm;
+                conversation.innerText = value;
+                setTimeout(
+                    function() {
+                        box.style.transform = 'rotate(360deg)';
+                        box.style.transition = 'all 2s';
+                        ulNode.insertBefore(box, liNode);
+                    }, 30
+                )
+                console.dir(box)
+                number.innerText = maxLen;
+            }
+
+            function inputText(event) {
+                value = text.value;
+                number.innerText = maxLen - value.trim().length;
+                if (event.shiftKey && event.keyCode == 13) {//e.type=='click';判断事件类型。
+                    submit();
+                }
+            }
+            window.addEventListener('keyup', inputText);
+            let btn = document.querySelector('a');
+            btn.addEventListener('click', submit);
+        }
+        window.addEventListener('load', handle);
+
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="note iconfont">&#xe604;</div>
+            <div class="text">
+                <h3>@zhangsan</h3>
+                <p>hello world</p>
+            </div>
+        </li>
+        <li>
+            <div class="note iconfont">&#xe604;</div>
+            <div class="text">
+                <h3>@lisi</h3>
+                <p>hello</p>
+            </div>
+        </li>
+    </ul>
+    <div class="box">
+        name:<input type="text" value="" /><br />
+        <textarea name="" id="" cols="30" rows="10" value="" maxlength="100" placeholder="此处留言100字数"></textarea>
+        <div>
+            剩余字数:<span>100</span>
+            <a href="javascript:void(0)">发表</a>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--左边定宽，右边自适应的解决方案。
+1.左边元素position绝对定位使右边元素占满，指定右边元素position相对定位和左边距。再指定左边元素z-index。
+2.指定右边元素的宽为：calc(100%-50px)-->

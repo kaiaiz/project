@@ -1,0 +1,806 @@
+*{
+  margin: 0;
+  padding: 0
+}
+/*停靠栏开始*/
+header{
+  width: 100%;
+  height: 0.88em;
+  background-color: #f32d2d;
+  position: fixed;
+  z-index: 999;
+}
+header div.search{
+  width: 3.98em;
+  height: 0.66em;
+  margin: 0  auto;
+  margin-top: 0.1em;
+  position: relative;
+}
+header > img{
+  width: 0.41em;
+  height: 0.41em;
+  float: left;
+  margin-top: 0.22em;
+  margin-left: 0.40em;
+}
+header div.search input{
+  width: 100%;
+  height: 100%;
+  background-color: #fee9e9;
+  float: left;
+  border: 0;
+  border-radius: 3px;
+  font-size: 0.26em;
+  padding-left: 0.21em;
+}
+header div.search img{
+  width: 0.32em;
+  height: 0.32em;
+  position: absolute;
+  top:0.15em;;
+  right: 0.25em;
+}
+header span{
+  font-size: 0.21em;
+  float: right;
+  margin-right: 1.37em;
+  margin-top: -2.44em;
+  color: #fadeff;
+}
+div.header{
+  width: 100%;
+  height: 0.88em;
+  background-color: #f32d2d;
+}
+/*停靠栏结束*/
+/*banner开始*/
+section.banner{
+  width: 100%;
+  height: 2.22rem;
+  background-color: orange;
+  position: relative;
+}
+section.banner > a.image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+section.banner a.image > img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+section.banner div.button-div{
+  width: 1.5rem;
+  height: 0.14px;
+  position: absolute;
+  right: 2.5rem;
+  bottom: 0.2rem;
+  background-color: red;
+}
+section.banner div.button-div a{
+  width: 0.14rem;
+  height: 0.14rem;
+  background-color:#7a797c;
+  margin-right: 0.04rem;
+  border-radius: 50%;
+  float: left;
+}
+section.banner div.button-div a:hover{
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: #ffffff;
+  border: 0.02rem solid #7f7e80;
+}
+section.banner div.button-div a:last-child{
+  margin: 0;
+}
+/*banner结束*/
+/*菜单开始*/
+section.menu{
+  width: 100%;
+  height: 2.92em;
+  background-color: red;
+}
+section.menu ul{
+  width: 100%;
+  height: 1.38em;
+  background-color: yellow;
+  list-style: none;
+}
+section.menu ul li{
+  width: 20%;
+  height: 100%;
+  background-color: #ffffff;
+  float: left;
+  background-color: #ffffff;
+  padding-top: 0.08em;
+}
+section.menu ul li a:first-child{
+  width: 0.72em;
+  height: 0.72em;
+  background-color: #ffffff;
+  display: block;
+}
+section.menu ul li a:first-child img{
+  display: block;
+  width: 0.72em;
+  height: 0.72em;
+  margin-left: 0.28em;
+}
+section.menu ul li a:nth-child(2){
+  font-size: 0.21em;
+  text-decoration: none;
+  display: block;
+  color: #051b28;
+  margin-top: 0.15rem;
+  margin-left: 0.24rem;
+}
+/*菜单结束*/
+/*天猫热点开始*/
+section.car-hot{
+  width: 100%;
+  height: 0.8rem;
+  background-color: #ffffff;
+  padding-bottom: 0.2rem;
+}
+section.car-hot div.left-box{
+  width: 1.32rem;
+  height: 100%;
+  border-right: 2px solid #efefef;
+  float: left;
+}
+section.car-hot div.left-box img{
+  width: 100%;
+  height:100%;
+}
+section.car-hot div.right-box{
+  width: 5.0rem;
+  height: 100%;
+  background-color: #ffffff;
+  float: left;
+}
+section.car-hot div.right-box img{
+  width: 0.35rem;
+  height: 0.32rem;
+  margin-left: 0.25rem;
+  margin-top: 0.26rem;
+  float: left;
+}
+section.car-hot div.right-box > div{
+  width: 3.79rem;
+  height: 100%;
+  background-color: #ffffff;
+  float: left;
+}
+section.car-hot div.right-box > div div.text1{
+  font-size: 0.21rem;
+  color: #a5aaaa;
+  margin-bottom: 0.1rem;
+}
+section.car-hot div.right-box > div div.text2{
+  font-size: 0.21rem;
+  color: #ff676f;
+}
+/*天猫热点结束*/
+/**轮播图开始*/
+section.change{
+  width: 100%;
+  height: 2.17rem;
+  background-color: #efefef;
+  padding-left: 0.09rem;
+}
+section.change div.box{
+  width: 100%;
+  height: 2.08rem;
+  background-color:
+}
+section.change div.box div.left{
+  width: 3.5rem;
+  height: 100%;
+  float: left;
+  margin-right: 0.12rem;
+}
+section.change div.box div.left img{
+  width: 100%;
+  height: 100%;
+}
+section.change div.box div.right{
+  width: 2.78rem;
+  height: 100%;
+  background-color: #fdffff;
+  float: left;
+}
+/*轮播图结束*/
+/*必抢开始*/
+section.value{
+  width: 100%;
+  height: 5.7rem;
+  background-color: red;
+}
+section.value div.caption{
+  width: 100%;
+  height:0.62rem;
+  background-color: purple;
+  display: block;
+}
+section.value div.caption{
+  width: 100%;
+  height:0.62rem;
+  background-color: #f0f0f0;
+  display: block;
+}
+section.value div.caption div.text{
+  width: 2.66rem;
+  height: 100%;
+  line-height: 0.62rem;
+  text-align: center;
+  font-size: 0.24rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  color: #faa96b;
+  position: relative;
+}
+section.value div.caption div.text > img{
+  width: 0.29rem;
+  height: 0.29rem;
+}
+section.value div.caption div.text::before{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #fad8b6;
+  position: absolute;
+  top: 0.32rem;
+  left: 0;
+}
+section.value div.caption div.text::after{
+  content: "";
+  width: 0.68rem;
+  height: 0.01rem;
+  background-color: #fad8b6;
+  position: absolute;
+  top: 0.32rem;
+  right: 0;
+}
+section.value div.goods{
+  width: 100%;
+  height: 5.1rem;
+  background-color: green;
+}
+section.value div.goods div.first-line{
+  width: 100%;
+  height: 2.54rem;
+  background-color: #ffffff;
+  border-bottom: 0.01rem solid #f0f0f0;
+}
+section.value div.goods div.first-line > div{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+section.value div.goods div.first-line > div > div:first-child{
+  width: 100%;
+  height: 0.23rem;
+  padding-top: 0.14rem;
+  text-align: center;
+  font-size: 0.23rem;
+  color: #bababa;
+  margin-bottom: 0.19rem;
+}
+section.value div.goods div.first-line > div > a img{
+  width: 100%;
+  height: 1.26rem;
+}
+section.value div.goods div.first-line > div > div:last-child{
+  font-size: 0.17rem;
+  text-align: center;
+}
+section.value div.goods div.first-line > div > div:last-child span:first-child{
+  color: #ff7474;
+}
+section.value div.goods div.first-line > div > div:last-child span:last-child{
+  color: #bcbcbc;
+}
+section.value div.goods div.first-line div:nth-child(3){
+  border-right: 0.01rem solid #f0f0f0;
+  box-sizing: border-box;
+}
+section.value div.goods div.second-line{
+  width: 100%;
+  height: 2.54rem;
+  background-color: #ffffff;
+}
+section.value div.goods div.second-line > div{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+section.value div.goods div.second-line > div > div:first-child{
+  width: 100%;
+  height: 0.23rem;
+  padding-top: 0.14rem;
+  text-align: center;
+  font-size: 0.23rem;
+  color: #bababa;
+  margin-bottom: 0.19rem;
+}
+section.value div.goods div.second-line > div > a img{
+  width: 100%;
+  height: 1.26rem;
+}
+section.value div.goods div.second-line > div > div:last-child{
+  font-size: 0.17rem;
+  text-align: center;
+}
+section.value div.goods div.second-line > div > div:last-child span:first-child{
+  color: #ff7474;
+}
+section.value div.goods div.second-line > div > div:last-child span:last-child{
+  color: #bcbcbc;
+}
+/*必抢结束*/
+/*潮流酷玩开始*/
+section.play{
+  width: 100%;
+  height: 3.22em;
+  background-color: red;
+}
+section.play div.caption{
+  width: 100%;
+  height:0.62rem;
+  background-color: #f0f0f0;
+  display: block;
+}
+section.play div.caption div.text{
+  width: 3.26rem;
+  height: 100%;
+  line-height: 0.62rem;
+  text-align: center;
+  font-size: 0.24rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  color: #a2b0e6;
+  position: relative;
+}
+section.play div.caption div.text > img{
+  width: 0.29rem;
+  height: 0.29rem;
+}
+section.play div.caption div.text::before{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #cfdaed;
+  position: absolute;
+  top: 0.32rem;
+  left: 0;
+}
+section.play div.caption div.text::after{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #cfdaed;
+  position: absolute;
+  top: 0.32rem;
+  right: 0;
+}
+section.play div.phone{
+  width: 100%;
+  height: 2.6em;
+  background-color: #fffeff;
+}
+section.play div.phone > a{
+  width: 30.333333%;
+  height: 100%;
+  float: left;
+  display: block;
+  margin-right: 0.19rem;
+}
+section.play div.phone a img{
+  width: 100%;
+  height: 100%;
+}
+/*潮流酷玩结束*/
+/*品牌特卖开始*/
+section.sell{
+  width: 100%;
+  height: 2.5rem;
+  background-color: yellow;
+}
+section.sell div.caption{
+  width: 100%;
+  height:0.62rem;
+  background-color: #f0f0f0;
+  display: block;
+}
+section.sell div.caption div.text{
+  width: 3.26rem;
+  height: 100%;
+  line-height: 0.62rem;
+  text-align: center;
+  font-size: 0.24rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  color: #faa96b;
+  position: relative;
+}
+section.sell div.caption div.text > img{
+  width: 0.29rem;
+  height: 0.29rem;
+}
+section.sell div.caption div.text::before{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #f5cba0;
+  position: absolute;
+  top: 0.32rem;
+  left: 0;
+}
+section.sell div.caption div.text::after{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #fad8b6;
+  position: absolute;
+  top: 0.32rem;
+  right: 0;
+}
+section.sell div.show{
+  width: 100%;
+  height: 1.88em;
+  background-color: blue;
+}
+section.sell div.show a:first-child{
+  width: 3.22rem;
+  height: 100%;
+  display: block;
+  border-right: 2px solid #f0f0f0;
+  box-sizing: border-box;
+  float: left;
+}
+section.sell div.show a:first-child img{
+  width: 3.22rem;
+  height: 100%;
+}
+section.sell div.show a:last-child{
+  border: none;
+  width: 3.18rem;
+  height: 100%;
+  display: block;
+  float: left;
+}
+section.sell div.show a:last-child img{
+  width: 3.18rem;
+  height: 100%;
+}
+/*品牌特卖结束*/
+/*便捷生活开始*/
+section.lift{
+  width: 100%;
+  height: 3.06rem;
+  background-color: yellow;
+}
+section.life div.caption{
+  width: 100%;
+  height:0.56rem;
+  background-color: #f0f0f0;
+  display: block;
+}
+section.life div.caption div.text{
+  width: 3.28rem;
+  height: 100%;
+  line-height: 0.62rem;
+  text-align: center;
+  font-size: 0.26rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  color: #b6daa0;
+  position: relative;
+}
+section.life div.caption div.text > img{
+  width: 0.32rem;
+  height: 0.29rem;
+}
+section.life div.caption div.text::before{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #b6daa0;
+  position: absolute;
+  top: 0.32rem;
+  left: 0;
+}
+section.life div.caption div.text::after{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #b6daa0;
+  position: absolute;
+  top: 0.32rem;
+  right: 0;
+}
+section.life div.show{
+  width: 100%;
+  height: 2.44em;
+  background-color: blue;
+}
+section.life div.show div.left{
+  width: 2.84rem;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  border-right: 0.02rem solid #f0f0f0;
+}
+section.life div.show div.left a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+section.life div.show div.left a img{
+  width: 100%;
+  height: 100%;
+}
+section.life div.show div.right{
+  width: 3.56rem;
+  height: 100%;
+  float: left;
+}
+section.life div.show div.right a img{
+  width: 100%;
+  height: 100%;
+}
+section.life div.show div.right a:first-child{
+  width: 100%;
+  height: 1.24rem;
+  display: block;
+}
+section.life div.show div.right a:last-child{
+  width: 100%;
+  height: 1.24rem;
+  display: block;
+}
+/*便捷生活结束*/
+/*热门行业开始*/
+section.job{
+  width: 100%;
+  height: 7.85rem;
+}
+section.job div.caption{
+  width: 100%;
+  height:0.62rem;
+  background-color: #f0f0f0;
+  display: block;
+}
+section.job div.caption div.text{
+  width: 3.26rem;
+  height: 100%;
+  line-height: 0.62rem;
+  text-align: center;
+  font-size: 0.25rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  color: #a798e7;
+  position: relative;
+}
+section.job div.caption div.text > img{
+  width: 0.29rem;
+  height: 0.29rem;
+}
+section.job div.caption div.text::before{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #a798e7;
+  position: absolute;
+  top: 0.32rem;
+  left: 0;
+}
+section.job div.caption div.text::after{
+  content: "";
+  width: 0.68rem;
+  height: 0.02rem;
+  background-color: #a798e7;
+  position: absolute;
+  top: 0.32rem;
+  right: 0;
+}
+section.job div.first-line{
+  width: 100%;
+  height: 2.02rem;
+  border-bottom: 0.01rem solid #f0f0f0;
+  box-sizing: border-box;
+  float: left;
+}
+section.job div.first-line a{
+  width: 50%;
+  height: 100%;
+  border-right: 0.01rem solid #f0f0f0;
+  box-sizing: border-box;
+  float: left;
+}
+section.job div.first-line a:last-child{
+  border: none;
+}
+section.job div a img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*第二行开始*/
+section.job div.second-line{
+  width: 100%;
+  height: 2.61rem;
+  border-bottom: 0.01rem solid #f0f0f0;
+  box-sizing: border-box;
+}
+section.job div.second-line div{
+  width: 25%;
+  height: 100%;
+  border-right: 0.01rem solid #f0f0f0;
+  box-sizing: border-box;
+  float: left;
+}
+section.job div.second-line div:last-child{
+  border: none;
+}
+section.job div.second-line div a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*第二行结束*/
+/*第三行开始*/
+section.job div.third-line{
+  width: 100%;
+  height: 2.61rem;
+  border-bottom: 0.01rem solid #f0f0f0;
+  box-sizing: border-box;
+}
+section.job div.third-line div{
+  width: 25%;
+  height: 100%;
+  border-right: 0.01rem solid #f0f0f0;
+  box-sizing: border-box;
+  float: left;
+}
+section.job div.third-line div:last-child{
+  border: none;
+}
+section.job div.third-line div a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*第三行结束*/
+/*热门行业结束*/
+/*猜你喜欢开始*/
+section.favorite{
+  width: 100%;
+  height: 6.6rem;
+}
+section.favorite div.caption{
+  width: 100%;
+  height:0.92rem;
+  background-color: #f0f0f0;
+  display: block;
+}
+section.favorite div.caption div.text{
+  width: 1.92rem;
+  height: 100%;
+  line-height: 0.92rem;
+  text-align: center;
+  font-size: 0.26rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  color: #faa96b;
+  position: relative;
+}
+section.favorite div.caption div.text::before{
+  content: "";
+  width: 0.28rem;
+  height: 0.02rem;
+  background-color: #fad8b6;
+  position: absolute;
+  top: 0.44rem;
+  left: 0;
+}
+section.favorite div.caption div.text::after{
+  content: "";
+  width: 0.28rem;
+  height: 0.02rem;
+  background-color: #fad8b6;
+  position: absolute;
+  top: 0.44rem;
+  right: 0;
+}
+section.favorite div.product{
+  width: 100%;
+  height: 4.54rem;
+}
+section.favorite div.product div:first-child{
+  width: 3.18rem;
+  height: 100%;
+  float: left;
+}
+section.favorite div.product > div > a{
+  width: 100%;
+  height: 3.17rem;
+  display: block;
+}
+section.favorite div.product div > div{
+  width: 100%;
+  height: 1.37rem;
+  font-size: 0.26rem;
+  padding: 0.15rem;
+  color: #666;
+  text-align: left;
+  line-height: 0.35rem;
+}
+section.favorite div.product div > div > span{
+  color: #dd2727;
+  margin-top: 0.06rem;
+}
+section.favorite div.product div:first-child a img{
+  width: 100%;
+  height: 100%;
+}
+section.favorite div.product div:last-child{
+  width: 3.16rem;
+  height: 1.37rem;
+  float: right;
+}
+section.favorite div.product div:last-child a img{
+  width: 100%;
+  height: 100%;
+}
+section.favorite div.end{
+  width: 100%;
+  height: 0.86rem;
+  background-color: #eee;
+  overflow: hidden;
+}
+section.favorite div.end  > div{
+  width: 0.6rem;
+  height: 0.42rem;
+  margin: 0.26rem auto 0;
+}
+section.favorite div.end >div > img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*猜你喜欢结束*/
+/*底部开始*/
+footer{
+  width: 100%;
+  height: 2.02rem;
+  border-top: 0.04rem solid #000;
+  text-align: center;
+  color: #ccd5e2;
+  font-size: 0.2rem;
+}
+footer ul{
+  width: 5.61rem;
+  height: 0.23rem;
+  margin: 0.45rem auto 0.66rem;
+  list-style: none;
+}
+footer ul li{
+  float: left;
+  line-height: 0.23rem;
+}
+footer ul li a{
+  text-decoration: none;
+  padding: 0 0.35rem;
+  color: #999;
+  display: block;
+  border-right: 0.02rem solid #99a5c2;
+}
+footer ul li a.last{
+  border: none;
+}
+/*底部结束*/
