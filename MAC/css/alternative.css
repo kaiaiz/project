@@ -1,0 +1,117 @@
+@media screen and (max-width:767px) {
+    /*顶部开始 手机端适应*/
+    header nav main.content>ul.pc {
+        display: none;
+    }
+    header nav main.content {
+        max-width: none;
+        min-width: 320px;
+        height: 48px;
+    }
+    header nav main.content>ul.phone {
+        width: auto;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav main.content>ul.phone>li {
+        height: 100%;
+        padding: 0 10px;
+    }
+    header nav main.content>ul.phone>li:nth-child(1)>a {
+        display: block;
+        width: 18px;
+        line-height: 48px;
+        height: 100%;
+        color: #fff;
+    }
+    header nav main.content>ul.phone>li:nth-child(2)>a {
+        display: block;
+        width: 18px;
+        line-height: 48px;
+        height: 100%;
+        text-decoration: none;
+        background-image: url('../img/apple.png');
+        background-repeat: no-repeat;
+        background-size: 18px 48px;
+        background-position: center;
+    }
+    header nav main.content>ul.phone>li:nth-child(3)>a {
+        display: block;
+        width: 18px;
+        line-height: 48px;
+        height: 100%;
+        color: #fff;
+        text-decoration: none;
+    }
+    /*顶部结束*/
+    /*底部开始*/
+    footer main.content div.column-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    footer main.content div.column-footer ul {
+        width: 100%;
+        padding: 0;
+    }
+    footer main.content div.column-footer ul ul:last-child {
+        padding: 0;
+    }
+    footer main.content div.column-footer ul li {
+        display: none;
+        padding: 10px 0;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    footer main.content div.column-footer ul li::after {
+        display: block;
+        content: "+";
+        float: right;
+        margin-right: 8px;
+    }
+    footer main.content div.column-footer ul li:first-child {
+        display: block;
+    }
+    /*底部开始*/
+}
+
+
+/*图片开始*/
+
+@media screen and (max-width:736px) {
+    section.types ul {
+        flex-wrap: wrap;
+    }
+    section.types ul li {
+        width: 50%;
+        border-bottom: 2px solid #fff;
+    }
+    section.types ul li:nth-child(3),
+    section.types ul li:nth-child(4) {
+        border-bottom: 2px solid #fff;
+    }
+    /*底部开始*/
+    footer main.content div.end-footer div.bottom>span:nth-child(2) {
+        display: block;
+    }
+    /*底部结束*/
+}
+
+@media screen and (max-width:435px) {
+    section.types ul {
+        flex-wrap: wrap;
+    }
+    section.types ul li {
+        width: 100%;
+    }
+    /*底部开始*/
+    footer main.content div.end-footer div.bottom>a:last-child {
+        float: none;
+        padding-top: 5px;
+    }
+    /*底部结束*/
+}
+
+
+/*图片开始*/

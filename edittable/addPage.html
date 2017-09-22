@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.message {
+            width: 400px;
+            height: 200px;
+            background: gray;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        form input {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="message">
+    <form action="addVal.php" method="get">
+        请输入姓名：<input type="text" name="name" value=""><br/>
+        请输入年龄<input type="text" name="age" value=""><br/>
+        性别:<input type="radio" name="sex" value="男">男
+        <input type="radio" name="sex" value="女">女<br />
+        课程：<input type="text" name="course" value=""><br/>
+        <input type="submit" value="submit">
+    </form>
+    <a href="index.php">返回首页</a>
+</div>
+</body>
+</html>

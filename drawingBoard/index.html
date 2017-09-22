@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .active {
+            background-color: #F0C676!important;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        div.left-panel {
+            width: 100px;
+            height: 100%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+            background-color: #efe4b0;
+            border: 1px solid rgba(0, 0, 0, .15);
+            opacity: .8;
+            border-right: 1px solid #000;
+            box-sizing: border-box;
+        }
+        
+        div.left-panel div.theme-icon {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #fff;
+            background-color: #ff7f27;
+        }
+        
+        div.left-panel div.theme-icon i.theme {
+            font-size: 48px;
+            color: #fff;
+            display: block;
+        }
+        
+        div.left-panel button {
+            float: left;
+            padding: 5px;
+            margin: 8px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+            border-radius: 4px;
+            background-color: #efe4b0;
+            outline: none;
+            -webkit-user-select: none;
+        }
+        
+        div.left-panel div.style {
+            width: 100%;
+            height: auto;
+            border-top: 1px solid #fff;
+            float: left;
+        }
+        
+        div.left-panel div.style input {
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin: 8px;
+        }
+        
+        div.right {
+            flex-grow: 1;
+        }
+        
+        div.right div.top-panel {
+            width: 100%;
+            height: 100px;
+            background-color: #efe4b0;
+            opacity: .8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #000;
+        }
+        
+        div.right div.top-panel button {
+            float: left;
+            padding: 5px;
+            margin: 8px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+            border-radius: 4px;
+            background-color: #efe4b0;
+            outline: none;
+            -webkit-user-select: none;
+        }
+        
+        div.right canvas.draw {
+            -webkit-user-select: none;
+        }
+        
+        div.right i.eraser {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            display: none;
+        }
+        
+        div.main {
+            position: relative;
+        }
+        
+        div.clip {
+            display: none;
+            border: 1px dashed #999999;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        div.mask {
+            width: 1002px;
+            height: 452px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        
+        .fonts {
+            min-width: 100px;
+            min-height: 50px;
+            line-height: 20px;
+            border: 1px solid #eee;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+    <script src="drawingBoard.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="left-panel">
+        <div class="theme-icon">
+            <i class="theme iconfont">&#xe641;</i>
+            <!--        图标-->
+        </div>
+        <button class="iconfont line">&#xe616;</button>
+        <!--    实线-->
+        <button class="iconfont dashed-line">&#xe672;</button>
+        <!--    虚线-->
+        <button class="iconfont pencil">&#xe614;</button>
+        <!--    铅笔-->
+        <button class="iconfont eraser">&#xe622;</button>
+        <!--   橡皮擦-->
+        <button class="iconfont hollow-circle">&#xe62a;</button>
+        <!--    空心圆-->
+        <button class="iconfont solid-circle">&#xe631;</button>
+        <!--   实心圆-->
+        <button class="iconfont hollow-rectangle">&#xe640;</button>
+        <!--   空心矩形-->
+        <button class="iconfont solid-rectangle">&#xe627;</button>
+        <!--   实心矩形-->
+        <button class="iconfont hollow-polygon">&#xe7d1;</button>
+        <!--   空心多边形-->
+        <button class="iconfont solid-polygon">&#xe697;</button>
+        <!--   实心多边形-->
+        <button class="iconfont hollow-horns">&#xe63b;</button>
+        <!--   空心多角形-->
+        <button class="iconfont solid-horns">&#xe603;</button>
+        <!--   实心多角形-->
+        <button class="iconfont font">&#xe610;</button>
+        <!--        文字-->
+        <div class="style">
+            <button class="iconfont stroke-color">&#xe64c;</button>
+            <input class="stroke" type="color" />
+            <!--            线条颜色-->
+            <button class="iconfont fill-color" value="">&#xe637;</button>
+            <input class="fill" type="color">
+            <!--            填充颜色-->
+        </div>
+    </div>
+    <div class="right">
+        <div class="top-panel">
+            <button class="iconfont previous">&#xe60d;</button>
+            <!--            回退-->
+            <button class="iconfont fill-color">&#xe601;</button>
+            <!--            前进-->
+            <button class="iconfont select">&#xe621;</button>
+            <!--            选择-->
+            <button class="iconfont reverse">&#xe613;</button>
+            <!--            反向-->
+            <button class="iconfont empty">&#xe63c;</button>
+            <!--   清空-->
+            <a href="" download="">
+                <button class="iconfont save">&#xe617;</button>
+            </a>
+            <!--            保存-->
+        </div>
+        <div class="main">
+            <canvas class="draw" width="1000" height="450"></canvas>
+            <i class="iconfont eraser">&#xe62c;</i>
+            <div class="clip"></div>
+            <div class="mask"></div>
+        </div>
+    </div>
+</body>
+
+</html>
