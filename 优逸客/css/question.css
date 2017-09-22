@@ -1,0 +1,293 @@
+/*顶部开始*/
+*{
+	margin: 0;
+	padding: 0
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+  background-color: #0078e6;
+  overflow: hidden;
+	position: fixed;
+}
+header div.caption{
+  width: 2.01rem;
+  height: 0.67rem;
+  background-color: #0078e6;
+  margin: 0.13rem auto 0;
+}
+header div.caption > a{
+  width: 0.7rem;
+  height: 0.67rem;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.7rem 0.67rem;
+  float: left;
+}
+header div.caption > p{
+  color: #ffffff;
+  font-size:0.34rem;
+  float: left;
+  height: 100%;
+  line-height: 0.67rem;
+  margin-left: 0.16rem;
+}
+/*顶部结束*/
+/*banner strt*/
+section.banner{
+  width: 100%;
+  height: 2.86rem;;
+  background-color: #f5f6fa;
+}
+section.banner a{
+  width: 100%;
+  height: 2.8rem;
+  display: block;
+}
+section.banner a img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*banner end*/
+/*内容开始*/
+section.content{
+  width: 100%;
+  height: 16.5rem;
+  background-color: #f5f6fa;
+}
+section.content div.caption{
+  width: 100%;
+  height: 0.62rem;
+  background-color: #f5f6fa;
+  line-height: 0.62rem;
+	padding-left: 0.12rem;
+}
+section.content div.caption a:first-child{
+  text-decoration: none;
+  color: #494747;
+  font-size: 0.22rem;
+  margin: 0 0.14rem;
+  font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.content div.caption span{
+	width: 0.16rem;
+	height: 0.2rem;
+	margin-top: 0.26rem;
+	font-size: 0.22rem;
+	margin-top: 0.24rem;
+	text-align: center;
+	color: #494747;
+	float: left;
+	background-image: url('../img/jiantou.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section.content div.caption a:last-child{
+	color: #494747;
+	font-size: 0.22rem;
+	margin: 0 0.14rem;
+	font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.content  ul{
+	width: 7.02rem;
+	height: 13.85rem;
+	margin-left: 0.24rem;
+	background-color: #ffffff;
+	list-style: none;
+	overflow: hidden;
+}
+section.content > ul > li{
+	width: 100%;
+	height: 2.69rem;
+	background-color: #ffffff;
+}
+section.content ul li div.letter{
+	width:5.64rem;
+	height: 0.23rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.19rem;
+	font-size: 0.23rem;
+	color: #474747;
+	margin-top: 0.3rem;
+}
+section.content ul li div.circle{
+	width: 0.12rem;
+	height: 0.12rem;
+	background-image: url('../img/question01.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.24rem 0.24rem;
+	margin-top: 0.3rem;
+	margin-left: 0.11rem;
+	float: left;
+	margin-right: 0.43rem;
+}
+section.content ul li > p{
+	width: 6rem;
+	height: 1.4rem;
+	font-size: 0.22rem;
+	color: #999999;
+	margin-top: 0.3rem;
+	float: left;
+}
+section.content ul li > a.see{
+	width: 6.4rem;
+	height: 0.22rem;
+	background-color: #ffffff;
+	font-size: 0.22rem;
+	text-align: center;
+	color: #ff9f1c;
+	float: left;
+	margin-left: 0.42rem;
+	line-height: 0.22rem;
+	display: block;
+	text-decoration: none;
+}
+section.content ul li > div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px solid #b8b8b8;
+	float: left;
+	margin-top: 0.2rem;
+	margin-left: 0.42rem;
+}
+/*内容结束*/
+/*翻页开始*/
+section.number{
+	width: 100%;
+	height: 0.7rem;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+section.number div.button{
+	width: 7.3rem;
+	height: 0.32rem;
+	margin: 0.19rem auto;
+}
+section.number div.button a{
+	float: left;
+	margin-right: 0.15rem;
+	text-decoration: none;
+}
+section.number div.button a.image{
+	width: 0.56rem;
+	height: 0.31rem;
+	display: block;
+	background-image: url('../img/change01.png');
+	background-repeat: no-repeat;
+	background-size: 0.56rem 0.31rem;
+}
+section.number div.button a.image{
+	background-image: url('../img/change02.png');
+}
+section.number div.button a.number{
+	width: 0.32rem;
+	height: 0.32rem;
+	border-radius: 50%;
+	text-decoration: none;
+	color: #383838;
+	border: 0.01rem solid #999;
+}
+section.number div.button a.number > div{
+	width: 0.24rem;
+	height: 0.24rem;
+	border-radius: 50%;
+	margin: 0.02rem auto;
+	font-size: 0.1rem;
+	color: #383838;
+	border: 0.01rem solid #333;
+	line-height: 0.24rem;
+	text-align: center;
+}
+section.number div.button a.number:hover{
+	background-color: #01b5ff;
+	box-shadow: 0rem 0.01rem 0.2rem 0.2rem #5ed0ff;
+}
+section.number div.button a.number:hover div{
+	border: 1px solid #5fd0ff;
+	color: #68d3ff;
+}
+section.number div.button a.text{
+	background-color: #01b5ff;
+}
+section.number div.button a.text div{
+	border: 1px solid #5fd0ff;
+	color: #68d3ff;
+}
+section.number div.button > div.wen{
+	height: 100%;
+	line-height: 0.25rem;
+	font-size: 0.2rem;
+	color: #959595;
+	float: left;
+	margin-right: 0.1rem;
+}
+section.number div.button div.text{
+	margin-left: 0.2rem;
+	font-size: 0.2rem;
+	line-height: 0.3rem;
+	float: left;
+	margin-right: 0.1rem;
+}
+section.number div.button input{
+	margin-left: 0.03rem;
+	padding-left: 0.03rem;
+	font-size: 0.2rem;
+	box-sizing: border-box;
+	width: 0.48rem;
+	height: 0.23rem;
+	border-radius: 0.1rem;
+	margin: 0.02rem auto;
+	line-height: 0.23rem;
+	float: left;
+}
+section.number div.button a.go{
+	border: 0.01rem solid #333;
+	width: 0.31rem;
+	height: 0.32rem;
+	border-radius: 50%;
+	font-size: 0.09rem;
+	line-height: 0.32rem;
+	text-align: center;
+	float: left;
+	margin-left: 0.1rem;
+}
+section.number div.button a:last-child div{
+	width: 0.26rem;
+	height: 0.26rem;
+	border-radius: 50%;
+	margin: 0.025rem auto;
+	font-size: 0.09rem;
+	text-align: center;
+	line-height: 0.26rem;
+	border: 1px solid #aaaaaa;
+}
+/*翻页结束*/
+/*底部开始*/
+footer{
+	width: 100%;
+	height: 1.2rem;
+	background-color: #f5f6fa;
+}
+footer p:first-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+	padding-top: 0.18rem;
+	box-sizing: border-box;
+	margin-bottom: 0.2rem;
+}
+footer p:last-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+}
+/*底部结束*/

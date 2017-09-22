@@ -1,0 +1,282 @@
+/*顶部开始*/
+*{
+	margin: 0;
+	padding: 0
+}
+body{
+	background-color: #f5f6fa;
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+  background-color: #0078e6;
+  overflow: hidden;
+	position: fixed;
+}
+header div.caption{
+  width: 2.01rem;
+  height: 0.67rem;
+  background-color: #0078e6;
+  margin: 0.13rem auto 0;
+}
+header div.caption > a{
+  width: 0.7rem;
+  height: 0.67rem;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.7rem 0.67rem;
+  float: left;
+}
+header div.caption > p{
+  color: #ffffff;
+  font-size:0.34rem;
+  float: left;
+  height: 100%;
+  line-height: 0.67rem;
+  margin-left: 0.16rem;
+}
+/*顶部结束*/
+/*banner strt*/
+section.banner{
+  width: 100%;
+  height: 3.09rem;;
+  background-color: #f5f6fa;
+}
+section.banner a{
+  width: 100%;
+  height: 2.8rem;
+  display: block;
+}
+section.banner a img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*banner end*/
+/*师资详情开始*/
+section.about{
+	width: 100%;
+	height: 9.12rem;
+	background-color: #f5f6fa;
+}
+section.about div.caption{
+  width: 100%;
+  height: 0.62rem;
+  background-color: #f5f6fa;
+  line-height: 0.62rem;
+	padding-left: 0.12rem;
+}
+section.about div.caption a:first-child{
+  text-decoration: none;
+  color: #494747;
+  font-size: 0.22rem;
+  margin: 0 0.14rem;
+  font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.about div.caption span{
+	width: 0.16rem;
+	height: 0.2rem;
+	margin-top: 0.26rem;
+	font-size: 0.22rem;
+	margin-top: 0.24rem;
+	text-align: center;
+	color: #494747;
+	float: left;
+	background-image: url('../img/jiantou.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section.about div.caption a:last-child{
+	color: #494747;
+	font-size: 0.22rem;
+	margin: 0 0.14rem;
+	font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.about div.text{
+	width: 7.02rem;
+	height: 4.07rem;
+	background-color: #ffffff;
+	margin-left: 0.24rem;
+	overflow: hidden;
+}
+section.about div.text div.letter{
+	width:0.72rem;
+	height: 0.23rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.19rem;
+	font-size: 0.23rem;
+	color: #474747;
+	margin-top: 0.3rem;
+}
+section.about div.text div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #dddddd;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.about div.text div.teacher{
+	width: 6.61rem;
+	height: 3.11rem;
+	background-color: #ffffff;
+	padding-top: 0.3rem;
+	margin-left: 0.24rem;
+	box-sizing: border-box;
+}
+section.about div.text div.teacher div.image{
+	width: 2.81rem;
+	height: 2.81rem;
+	float: left;
+}
+section.about div.text div.teacher div.image img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.08rem;
+}
+section.about div.text div.teacher div.info{
+	width: 2.9rem;
+	height: 2.4rem;
+	margin-top: 0.16rem;
+	margin-left: 0.26rem;
+	float: left;
+}
+section.about div.text div.teacher div.info div.name{
+	width:100%;
+	height: 0.28rem;
+	line-height: 0.28rem;
+}
+section.about div.text div.teacher div.info div.name span:first-child{
+	font-size: 0.28rem;
+	color: #000000;
+	float: left;
+}
+section.about div.text div.teacher div.info div.name span:last-child{
+	font-size: 0.2rem;
+	color: #56ceff;
+	float: left;
+	line-height: 0.32rem;
+}
+section.about div.text div.teacher div.info div.profession{
+	width: 100%;
+	height: 1.49rem;
+	margin-top: 0.64rem;
+}
+section.about div.text div.teacher div.info div.profession div:first-child{
+	width: 100%;
+	height: 0.24rem;
+}
+section.about div.text div.teacher div.info div.profession div:first-child p:first-child{
+	font-size: 0.24rem;
+	color: #333333;
+	float: left;
+}
+section.about div.text div.teacher div.info div.profession div:first-child p:last-child{
+	font-size: 0.23rem;
+	color: #555555;
+	float: left;
+}
+section.about div.text div.teacher div.info div.profession > div:nth-child(2){
+	width: 100%;
+	height: 0.62rem;
+	margin-top: 0.18rem;
+}
+section.about div.text div.teacher div.info div.profession > div:nth-child(2) div:first-child{
+	font-size: 0.24rem;
+	color: #333333;
+	float: left;
+	line-height: 0.24rem;
+	width: 1.11rem;
+}
+section.about div.text div.teacher div.info div.profession div:nth-child(2) > div:last-child{
+	width: 1.58rem;
+	height: 0.62rem;
+	float: left;
+}
+section.about div.text div.teacher div.info div.profession div:nth-child(2) > div:last-child p{
+	font-size: 0.23rem;
+	color: #333333;
+	margin-top: ;
+}
+section.about div.text div.teacher div.info div.profession div:last-child{
+	width: 100%;
+	height: 0.24rem;
+}
+section.about div.text div.teacher div.info div.profession div:last-child p:first-child{
+	font-size: 0.24rem;
+	color: #333333;
+	float: left;
+}
+section.about div.text div.teacher div.info div.profession div:last-child p:last-child{
+	font-size: 0.23rem;
+	color: #757575;
+	float: left;
+}
+section.about div.word{
+	width: 7.02rem;
+	height: 3.9rem;
+	background-color: #ffffff;
+	margin-left: 0.24rem;
+	margin-top: 0.2rem;
+	margin-left: 0.24rem;
+	overflow: hidden;
+}
+section.about div.word div.letter{
+	width:100%;
+	height: 0.23rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.19rem;
+	font-size: 0.23rem;
+	color: #474747;
+	margin-top: 0.3rem;
+}
+section.about div.word div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #dddddd;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.about div.word > p{
+	font-size:0.23rem;
+	width:6.45rem;
+	height: 1.51rem;
+	color: #737373;
+	margin-left: 0.42rem;
+}
+section.about div.word p:first-child{
+	margin-top: 0.21rem;
+}
+section.about div.word p:last-child{
+}
+/*师资详情结束*/
+/*底部开始*/
+footer{
+	width: 100%;
+	height: 1.2rem;
+	background-color: #f5f6fa;
+}
+footer p:first-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+	padding-top: 0.18rem;
+	box-sizing: border-box;
+	margin-bottom: 0.2rem;
+}
+footer p:last-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+}
+/*底部结束*/

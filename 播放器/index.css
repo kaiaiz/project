@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yanhei;
+}
+audio{
+    display: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+main.content {
+    width: 1200px;
+    height: 100%;
+}
+
+
+/*header start*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+}
+
+header main.constent a.logo {
+    width: 106px;
+    height: 100%;
+    display: block;
+    float: left;
+    text-decoration: none;
+}
+
+header main.constent a.logo img {
+    border: 0;
+}
+
+
+/*header end*/
+
+
+/*music start*/
+
+section.music {
+    overflow: hidden;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+}
+
+section.music main.content div.musicBox {
+    width: 100%;
+    height: 100%;
+}
+
+section.music main.content div.musicBox div.musicLrc {
+    width: 740px;
+    float: left;
+}
+
+section.music main.content div.musicBox div.musicLrc p#lrcName {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    white-space: nowrap;
+}
+
+section.music main.content div.musicBox div.musicLrc div.info {
+    width: 737px;
+    border-bottom: 1px solid #eaeaea;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section.music main.content div.musicBox div.musicLrc div.info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 32px;
+    display: inline;
+}
+
+section.music main.content div.musicBox div.musicLrc div.info span {
+    color: #d2a648;
+}
+
+section.music main.content div.musicBox div.musicLrc div.info p.album {
+    margin-right: 5px;
+}
+
+section.music main.content div.musicBox div.musicLrc div.info p.vocalist {
+    margin-left: 5px;
+}
+
+section.music main.content div.musicBox div.musicLrc div.lrcContent {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    height: 456px;
+    line-height: 32px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+section.music main.content div.musicBox div.musicLrc div.lrcContent div.bar-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+section.music main.content div.musicBox div.musicLrc div.lrcContent div.bar-box div.bar {
+    position: absolute;
+    width: 6px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.music main.content div.musicBox div.picture {
+    width: 290px;
+    height: 290px;
+    float: left;
+    border-radius: 50%;
+    margin: 100px 0 41px 35px;
+}
+section.music main.content div.musicBox div.picture a.musicPic{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+/*    background-image: url(img/images/mww.jpg);*/
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*music end*/
+
+
+/*playBox start*/
+
+section.playBox {
+    width: 100%;
+    height: 60px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+section.playBox main.content div.playerLeft {
+    width: 280px;
+    height: 100%;
+    float: left;
+    padding-right: 10px;
+}
+
+section.playBox main.content div.playerLeft div.musicControl {
+    padding-left: 24px;
+    float: left;
+    cursor: pointer;
+}
+
+section.playBox main.content div.playerLeft div.musicControl span.prev {
+    font-size: 30px;
+    color: #fff;
+    margin: 10px 0 0 17px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+section.playBox main.content div.playerLeft div.musicControl span.play {
+    font-size: 40px;
+    color: #fff;
+    margin: 10px 0 0 17px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+section.playBox main.content div.playerLeft div.musicControl span.next {
+    font-size: 30px;
+    margin: 10px 0 0 17px;
+    color: #fff;
+    display: inline-block;
+}
+
+section.playBox main.content div.playerLeft img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 10px 0 0 50px;
+}
+
+section.playBox main.content div.playerMiddle {
+    width: 440px;
+    height: 100%;
+    float: left;
+}
+
+section.playBox main.content div.playerMiddle p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 9px;
+}
+
+section.playBox main.content div.playerMiddle div.progressBar {
+    width: 430px;
+    height: 4px;
+    background-color: #262627;
+    margin: 10px 10px 0 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+section.playBox main.content div.playerMiddle div.progressBar a {
+    width: 10px;
+    height: 10px;
+    background-color: #ffcd2d;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: -5px;
+}
+
+section.playBox main.content div.playerMiddle div.progressBar div.schedulBtn {
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffcd2d;
+    border-radius: 4px;
+}
+
+section.playBox main.content div.playerRight {
+    width: 418px;
+    height: 100%;
+    float: left;
+}
+
+section.playBox main.content div.playerRight p.playTime {
+    margin: 33px 0 0 14px;
+    color: #fff;
+    font-size: 12px;
+    float: left;
+}
+
+section.playBox main.content div.playerRight a {
+    display: block;
+    text-decoration: none;
+}
+
+section.playBox main.content div.playerRight div.controlBar {
+    float: left;
+    height: 100%;
+    margin-left: 48px;
+}
+
+section.playBox main.content div.playerRight div.controlBar div {
+    color: #b5b5b5;
+    cursor: pointer;
+}
+
+section.playBox main.content div.playerRight div.controlBar div:hover {
+    color: #fff;
+}
+
+section.playBox main.content div.playerRight div.controlBar div.sound {
+    width: 20px;
+    height: 16px;
+    margin: 21px 22px 0 0;
+    float: left;
+}
+
+section.playBox main.content div.playerRight div.controlBar div.loop {
+    width: 28px;
+    height: 20px;
+    margin: 18px 19px 0 0;
+    float: left;
+}
+
+section.playBox main.content div.playerRight div.controlBar div.kSong {
+    width: 17px;
+    height: 19px;
+    float: left;
+    margin: 19px 26px 0 0;
+}
+
+section.playBox main.content div.playerRight div.controlBar div.menu {
+    width: 20px;
+    height: 18px;
+    float: left;
+    margin: 19px 43px 0 0;
+}
+
+section.playBox main.content div.playerRight div.controlBar div.download {
+    width: 20px;
+    height: 21px;
+    margin: 17px 23px 0 0;
+    float: left;
+}
+
+
+/*playerBox end*/

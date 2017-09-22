@@ -1,0 +1,820 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+main.content {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btn-active {
+    background-color: transparent!important;
+}
+
+.shadow-art {
+    box-shadow: -6px -5px 12px #a19d9d;
+}
+
+
+/*顶部开始*/
+
+div.logo {
+    position: absolute;
+    top: 143px;
+    left: 257px;
+}
+
+header {
+    width: 100%;
+    height: 1194px;
+    background-image: url('../img/home/banner01.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+}
+
+header div.caption {
+    width: 100%;
+    height: 353px;
+    background-color: #000;
+    opacity: 0.57;
+    margin-top: 437px;
+    padding-top: 36px;
+    box-sizing: border-box;
+}
+
+header div.caption main.content>div {
+    float: left;
+}
+
+header div.caption main.content>div.left {
+    color: white;
+    padding-right: 30px;
+    margin-right: 57px;
+    border-right: 4px solid #fff;
+}
+
+header div.caption main.content>div.left span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header div.caption main.content>div.left p {
+    font-size: 24px;
+}
+
+header div.caption main.content div.right {
+    width: 200px;
+}
+
+header div.caption main.content div.right {
+    width: 744px;
+    color: #fff;
+}
+
+header div.caption main.content div.right p {
+    font-size: 24px;
+}
+
+header div.caption main.content div.right p:last-child {
+    margin-top: 60px;
+}
+
+header div.button {
+    width: 327px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 84px;
+}
+
+header div.button a {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 63px;
+    border: 1px solid #fff;
+}
+
+header div.button a:last-child {
+    margin: 0;
+}
+
+
+/*顶部结束*/
+
+
+/*艺术商业开始*/
+
+section.option {
+    width: 890px;
+    margin: 0 auto;
+    margin-top: -121px;
+}
+
+section.option nav.title {
+    width: 100%;
+    height: 52px;
+}
+
+section.option nav.title ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+section.option nav.title ul li {
+    width: 96px;
+    height: 100%;
+    border-bottom: 1px solid #fff;
+    float: left;
+    text-align: center;
+    margin-right: 102px;
+    line-height: 52px;
+}
+
+section.option nav.title ul li:last-child {
+    margin-right: 0;
+}
+
+section.option nav.title ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+section.option div.article {
+    width: 100%;
+    height: 623px;
+    background-color: #fff;
+    box-shadow: 6px 5px 12px #a19d9d;
+    overflow: hidden;
+    position: relative;
+}
+
+section.option div.article div.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*    overflow: visible;*/
+}
+
+section.option div.article div.mask div.click {
+    position: absolute;
+    right: -17px;
+    bottom: -17px;
+    width: 36PX;
+    height: 36PX;
+    background: #2e2e2e;
+    color: #cccccc;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 20;
+}
+
+section.option div.article ul {
+    list-style: none;
+    width: 4000px;
+    height: 100%;
+    float: left;
+}
+
+section.option div.article ul li {
+    width: 890px;
+    height: 100%;
+    float: left;
+}
+
+section.option div.article ul li img {
+    float: left;
+    cursor: pointer;
+}
+
+section.option div.article ul li div.information {
+    width: 442px;
+    height: 100%;
+    float: left;
+    padding-left: 14px;
+    padding-right: 44px;
+    margin-top: 37px;
+    box-sizing: border-box;
+}
+
+section.option div.article ul li div.information h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+section.option div.article ul li div.information p:nth-child(2) {
+    font-size: 16px;
+}
+
+section.option div.article ul li div.information div.line {
+    width: 100%;
+    height: 0;
+    border-bottom: 2px dashed #a46b1f;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+section.option div.article ul li div.information p.text {
+    letter-spacing: 2px;
+    line-height: 200%;
+}
+
+section.option div.article ul li div.information p:last-child {
+    margin-top: 26px;
+}
+
+
+/*艺术商业结束*/
+
+
+/*科技与艺术开始*/
+
+section.art {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    position: relative;
+}
+
+
+
+section.art main.content hgroup {
+    padding: 75px 0 32px 84px;
+    position: relative;
+}
+section.art main.content hgroup div.click {
+    position: absolute;
+    top: -17px;
+    right: -17px;
+    width: 36PX;
+    height: 36PX;
+    background: #2e2e2e;
+    color: #cccccc;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 20;
+}
+section.art main.content hgroup p:last-child {
+    font-weight: bold;
+}
+
+section.art main.content div.top {
+    width: 100%;
+    height: 368px;
+}
+
+section.art main.content div.top img {
+    float: left;
+}
+
+section.art main.content div.top article {
+    width: 525px;
+    height: 100%;
+    float: left;
+    margin-left: 27px;
+}
+
+section.art main.content div.top article p {
+    letter-spacing: 4px;
+    line-height: 33px;
+    font-size: 14px;
+}
+
+section.art main.content div.top article p:last-child {
+    margin-top: 65px;
+}
+
+section.art main.content div.bottom {
+    width: 100%;
+    height: 772px;
+    background-color: #fff;
+}
+
+section.art main.content div.bottom article {
+    width: 610px;
+    height: 100%;
+    float: left;
+    padding-left: 24px;
+    margin-right: 54px;
+}
+
+section.art main.content div.bottom article p {
+    letter-spacing: 2px;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+section.art main.content div.bottom article p:nth-child(2),
+section.art main.content div.bottom article p:nth-child(3) {
+    margin-top: 40px;
+}
+
+section.art main.content div.bottom img {
+    float: left;
+}
+
+
+/*背景开始*/
+
+section.art div.bac {
+    width: 100%;
+    height: 1233px;
+    background-color: #000;
+    position: absolute;
+    top: 754px;
+    left: 0;
+    z-index: -10;
+    opacity: 0.8;
+    text-align: center;
+    color: #fff;
+}
+
+section.art div.bac p:first-child {
+    margin-top: 762px;
+    font-size: 48px;
+}
+
+section.art div.bac p:last-child {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+/*科技与艺术结束*/
+
+
+/*redaer开始*/
+
+section.reader {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 416px;
+    overflow: hidden;
+}
+
+section.reader hgroup {
+    margin-top: 85px;
+}
+
+section.reader hgroup h2 {
+    font-size: 48px;
+    font-weight: normal;
+}
+
+section.reader hgroup h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+section.reader div.top {
+    width: 100%;
+    height: 542px;
+}
+
+section.reader div.top img {
+    float: left;
+}
+
+section.reader div.top article {
+    width: 555px;
+    height: 100%;
+    float: left;
+    margin-left: 80px;
+}
+
+section.reader div.top article h1 {
+    font-size: 48px;
+    color: #504e4e;
+    font-weight: normal;
+}
+
+section.reader div.top article h2 {
+    margin-top: 30px;
+}
+
+section.reader div.top article h2 span {
+    font-size: 30px;
+    border-right: 3px solid #000;
+    display: inline-block;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+section.reader div.top article p:nth-child(3) {
+    margin-top: 40px;
+    letter-spacing: 4px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+section.reader div.top article p:nth-child(4) {
+    margin-top: 60px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+section.reader div.bottom {
+    width: 100%;
+    height: 628px;
+    margin-top: 104px;
+}
+
+section.reader div.bottom img {
+    float: left;
+}
+
+section.reader div.bottom article {
+    width: 555px;
+    height: 100%;
+    float: left;
+    margin-right: 80px;
+}
+
+section.reader div.bottom article h1 {
+    font-size: 48px;
+    color: #504e4e;
+    font-weight: normal;
+}
+
+section.reader div.bottom article h2 {
+    margin-top: 30px;
+}
+
+section.reader div.bottom article h2 span {
+    font-size: 30px;
+    border-right: 3px solid #000;
+    display: inline-block;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+section.reader div.bottom article p:nth-child(3) {
+    margin-top: 40px;
+    letter-spacing: 4px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+section.reader div.bottom article p:nth-child(4) {
+    margin-top: 60px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+
+/*reader结束*/
+
+
+/*house开始*/
+
+div.house {
+    margin-top: 202px;
+    text-align: center;
+}
+
+
+/*house结束*/
+
+
+/*project开始*/
+
+section.project {
+    width: 100%;
+    height: auto;
+    margin-top: 85px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+section.project main.content hgroup h1 {
+    font-size: 36px;
+    color: #030303;
+    font-weight: normal;
+}
+
+section.project main.content hgroup h2 {
+    font-size: 24px;
+    color: #323030;
+    margin-top: 16px;
+}
+
+section.project main.content hgroup div.line {
+    width: 49px;
+    height: 0;
+    border-bottom: 2px solid #2a2929;
+}
+
+section.project main.content div.img {
+    margin-top: 49px;
+    text-align: center;
+}
+
+section.project main.content div.click {
+    text-align: center
+}
+
+section.project main.content div.click p {
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+}
+
+section.project main.content div.click p:first-child span {
+    font-size: 24px;
+    color: #323030;
+    padding: 0 8px;
+    border-right: 3px solid #000;
+    display: inline-block;
+    height: 24px;
+}
+
+section.project main.content div.click p:first-child span:last-child {
+    border: none;
+}
+
+section.project main.content div.click p:nth-child(2),
+section.project main.content div.click p:nth-child(3) {
+    color: #3c3b3b;
+}
+
+section.project main.content div.click>a {
+    width: 114px;
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: #383838;
+    color: #fbf6f6;
+    font-size: 16px;
+}
+
+section.project main.content div.introduction {
+    width: 783px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.project main.content div.introduction>div {
+    padding: 0 5px;
+    font-size: 24px;
+    text-align: center;
+    float: left;
+    border: 1px solid #000;
+    margin-left: 20px;
+}
+
+
+/*project结束*/
+
+
+/*exhibition开始*/
+
+section.exhibition {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+section.exhibition a {
+    text-decoration: none;
+    display: block;
+}
+
+section.exhibition a:hover {
+    transform: rotate(360deg);
+    transition: all .4s;
+}
+
+section.exhibition a:nth-child(2) {
+    margin-top: -130px;
+    float: right;
+    position: relative;
+    z-index: 10;
+}
+
+section.exhibition a:nth-child(3) {
+    margin-top: -117px;
+    float: left;
+}
+
+
+/*exhibition结束*/
+
+
+/*list开始*/
+
+section.list {
+    width: 100%;
+    background-color: #000;
+    opacity: 0.75;
+    margin-top: -96px;
+    overflow: hidden;
+}
+
+section.list hgroup {
+    margin-top: 283px;
+    text-align: center;
+}
+
+section.list hgroup h3 {
+    font-size: 48px;
+    color: #fcfbfb;
+}
+
+section.list hgroup p {
+    font-size: 14px;
+    color: #fcfbfb;
+    margin-top: 24px;
+}
+
+section.list div.bottom div.left {
+    width: 741px;
+    height: 1052px;
+    float: left;
+}
+
+section.list div.bottom div.left ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+section.list div.bottom div.left ul li {
+    width: 100%;
+    height: 270px;
+    margin-top: 85px;
+}
+
+section.list div.bottom div.left ul li img {
+    float: left;
+}
+
+section.list div.bottom div.left ul li div.text {
+    color: #fcfbfb;
+    float: left;
+    padding-top: 89px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+section.list div.bottom div.left ul li div.text h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+section.list div.bottom div.left ul li div.text p span {
+    font-size: 18px;
+    padding: 0 17px;
+    border-right: 3px solid #fff;
+}
+
+section.list div.bottom div.left ul li div.text p span:first-child {
+    padding-left: 0;
+}
+
+section.list div.bottom>img {
+    float: right;
+    margin-right: -276px;
+    margin-bottom: 269px;
+}
+
+
+/*list结束*/
+
+
+/*底部开始*/
+
+footer {
+    width: 100%;
+    height: 1129px;
+    background-image: url(../img/home/footer01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+footer div.caption {
+    width: 1139px;
+    height: 255px;
+    margin: 0 auto;
+    margin-top: 296px;
+}
+
+footer div.caption ul {
+    height: 100%;
+    list-style: none;
+    float: left;
+    padding-right: 164px;
+}
+
+footer div.caption ul:last-child {
+    padding: 0;
+}
+
+footer div.caption ul li {
+    font-size: 18px;
+    color: #212020;
+    padding: 5px 0;
+}
+
+footer div.caption ul li:first-child {
+    font-size: 24px;
+    color: #050505;
+    padding: 5px 0;
+    margin-bottom: 38px;
+}
+
+footer div.caption ul li:first-child div.line {
+    width: 42px;
+    height: 0;
+    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+footer div.contact {
+    margin-top: 295px;
+}
+
+footer div.contact p>span {
+    font-size: 18px;
+    color: #212020;
+    margin-right: 25px;
+}
+
+footer div.contact>img {
+    margin-top: 10px;
+}
+
+footer div.contact div.people {
+    width: 455px;
+    margin: 0 auto;
+}
+
+footer div.contact div.people>div {
+    width: 44px;
+    height: 44px;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    float: left;
+    margin-right: 90px;
+}
+
+footer div.contact div.people>div:nth-child(1) {
+    background-image: url('../img/home/footer03.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer div.contact div.people>div:nth-child(2) {
+    background-image: url('../img/home/footer04.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer div.contact div.people>div:nth-child(3) {
+    background-image: url('../img/home/footer05.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer div.contact div.people>div:last-child {
+    margin: 0;
+    background-image: url('../img/home/footer06.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*地步结束*/

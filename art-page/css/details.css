@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+main.content {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btn-active {
+    background-color: transparent!important;
+}
+
+.shadow-art {
+    box-shadow: -6px -5px 12px #a19d9d;
+    background-color: #f9f4f4;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border-top: 11px solid #935f1c;
+}
+
+
+/*顶部开始*/
+
+div.logo {
+    position: absolute;
+    top: 143px;
+    left: 257px;
+}
+
+header {
+    width: 100%;
+    height: 1194px;
+    background-image: url('../img/list/banner01.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+}
+
+header div.caption {
+    width: 100%;
+    height: 819px;
+    background-color: #000;
+    opacity: 0.88;
+    margin-top: 118px;
+    padding-top: 43px;
+    box-sizing: border-box;
+}
+
+header div.caption main.content>div {
+    float: left;
+}
+
+
+/*艺术商业开始*/
+
+section.option {
+    width: 890px;
+    margin: 0 auto;
+    margin-bottom: 307px;
+}
+
+section.option nav.title {
+    width: 100%;
+    height: 52px;
+}
+
+section.option nav.title ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+section.option nav.title ul li {
+    width: 96px;
+    height: 100%;
+    border-bottom: 1px solid #fff;
+    float: left;
+    text-align: center;
+    margin-right: 102px;
+    line-height: 52px;
+}
+
+section.option nav.title ul li:last-child {
+    margin-right: 0;
+}
+
+section.option nav.title ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/*艺术商业结束*/
+
+header div.caption main.content>div.left {
+    color: white;
+    padding-right: 30px;
+    margin-right: 57px;
+    border-right: 4px solid #fff;
+}
+
+header div.caption main.content>div.left span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header div.caption main.content>div.left p {
+    font-size: 24px;
+}
+
+header div.caption main.content div.right {
+    width: 200px;
+}
+
+header div.caption main.content div.right {
+    width: 744px;
+    color: #fff;
+}
+
+header div.caption main.content div.right p {
+    font-size: 24px;
+}
+
+header div.caption main.content div.right p:last-child {
+    margin-top: 60px;
+}
+
+header div.button {
+    width: 327px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 84px;
+}
+
+header div.button a {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 63px;
+    border: 1px solid #fff;
+}
+
+header div.button a:last-child {
+    margin: 0;
+}
+
+
+/*顶部结束*/
+
+
+/*art 开始*/
+
+section.art {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    margin-top: -334px;
+}
+
+section.art main.content>hgroup {
+    padding: 26px 0 45px 0;
+}
+
+section.art main.content hgroup p {
+    font-weight: 300;
+}
+
+section.art main.content hgroup p span {
+    font-size: 14px;
+    color: #020202;
+    margin-right: 15px;
+}
+
+section.art main.content hgroup p span.bold {
+    font-weight: bold;
+}
+
+section.art main.content div.caption{
+    margin-bottom: 55px;
+}
+section.art main.content div.caption h2 {
+    font-size: 36px;
+    color: #252323;
+}
+section.art main.content div.caption h3{
+    font-size: 24px;
+    color: #373636;
+    margin-top: 32px;
+}
+section.art main.content div.caption p{
+    font-size: 18px;
+    color: #141313;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+/*photo 开始*/
+
+section.art main.content div.article {
+    width: 100%;
+    height: 2390px;
+} 
+section.art main.content div.article hgroup h3{
+    font-size: 24px;
+    color: #373636;
+}
+section.art main.content div.article hgroup p{
+    color: #8e8e8e;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+section.art main.content div.article div.photo1 {
+    width: 100%;
+    height: 366px;
+}
+section.art main.content div.article div.photo1 img{
+    float: left;
+}
+
+section.art main.content div.article div.photo1 div.para {
+    width: 532px;
+    float: left;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #434343;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+section.art main.content div.article div.photo1 div.para div.day{
+    width: 184px;
+    float: right;
+    position: relative;
+}
+section.art main.content div.article div.photo1 div.para div.day img:last-child{
+    position: absolute;
+    right: -26px;
+    margin-top: 15%;
+}
+section.art main.content div.article div.photo1 div.para p{
+    clear: both;
+    margin-top: 174px;
+}
+section.art main.content div.article div.photo2{
+    width: 100%;
+    height: 765px;
+    margin-top: 63px;
+}
+section.art main.content div.article div.photo2 div.para{
+    float: left;
+    width: 617px;
+    height: 523px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #434343;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+section.art main.content div.article div.photo2 div.para div.day{
+    width: 184px;
+    float: right;
+    position: relative;
+}
+section.art main.content div.article div.photo2 div.para div.day img:last-child{
+    position: absolute;
+    right: -26px;
+    margin-top: 15%;
+}
+section.art main.content div.article div.photo2 img{
+    float: right;
+}
+section.art main.content div.article div.photo2 p{
+    width: 100%;
+    float:left;
+    font-size: 14px;
+    color: #434343;
+    letter-spacing: 2px;
+    line-height: 28px;
+    margin-top: 125px;
+}
+section.art main.content div.article div.photo2 > p:last-child{
+    margin-top: 44px;
+}
+section.art main.content div.article div.photo3{
+    margin-top: 59px;
+    overflow: hidden;
+}
+section.art main.content div.article div.photo3 img{
+    float: left;
+}
+section.art main.content div.article div.photo3 div.para{
+    width: 546px;
+    height: 440px;
+    float :left;
+    font-size: 14px;
+    color: #434343;
+    letter-spacing: 2px;
+    line-height: 28px;
+    padding-left: 15px;
+}
+section.art main.content div.article div.photo3 div.para > p{
+    float: left;
+    clear: both;
+    margin-top: 91px;
+}
+section.art main.content div.article div.photo3 div.para div.day{
+    width: 184px;
+    float: right;
+    position: relative;
+}
+section.art main.content div.article div.photo3 div.para div.day img:last-child{
+    position: absolute;
+    right: -26px;
+    margin-top: 15%;
+}
+section.art main.content div.article div.photo3 p{
+    float: left;
+    font-size: 14px;
+    color: #434343;
+    letter-spacing: 2px;
+    line-height: 28px;
+    margin-top: 44px;
+}
+section.art main.content div.article div.article-end{
+    width: 100%;
+    height: auto;
+    background: red;
+    margin-top: 120px;
+}
+section.art main.content div.article div.article-end div.btn{
+    float: left;
+}
+section.art main.content div.article div.article-end div.btn span{
+    float: left;
+    line-height: 32px;
+    margin-right: 15px;
+}
+section.art main.content div.article div.article-end div.btn a{
+    display: block;
+    color: #fff;
+    background-color: #373636;
+    width: 32px;
+    height: 32px;
+    float: left;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 32px;
+}
+section.art main.content div.article div.article-end div.share{
+    float: right;
+}
+section.art main.content div.article div.article-end div.share span{
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 21px;
+    color: #303030;
+}
+
+
+/*photo end*/
+
+
+/*art 结束*/
+
+
+/*底部开始*/
+
+footer {
+    width: 100%;
+    height: 1129px;
+    background-image: url(../img/home/footer01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+footer div.caption {
+    width: 1139px;
+    height: 255px;
+    margin: 0 auto;
+    margin-top: 296px;
+}
+
+footer div.caption ul {
+    height: 100%;
+    list-style: none;
+    float: left;
+    padding-right: 164px;
+}
+
+footer div.caption ul:last-child {
+    padding: 0;
+}
+
+footer div.caption ul li {
+    font-size: 18px;
+    color: #212020;
+    padding: 5px 0;
+}
+
+footer div.caption ul li:first-child {
+    font-size: 24px;
+    color: #050505;
+    padding: 5px 0;
+    margin-bottom: 38px;
+}
+
+footer div.caption ul li:first-child div.line {
+    width: 42px;
+    height: 0;
+    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+footer div.contact {
+    margin-top: 295px;
+}
+
+footer div.contact p>span {
+    font-size: 18px;
+    color: #212020;
+    margin-right: 25px;
+}
+
+footer div.contact>img {
+    margin-top: 10px;
+}
+
+footer div.contact div.people {
+    width: 455px;
+    margin: 0 auto;
+}
+
+footer div.contact div.people>div {
+    width: 44px;
+    height: 44px;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    float: left;
+    margin-right: 90px;
+}
+
+footer div.contact div.people>div:nth-child(1) {
+    background-image: url('../img/home/footer03.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer div.contact div.people>div:nth-child(2) {
+    background-image: url('../img/home/footer04.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer div.contact div.people>div:nth-child(3) {
+    background-image: url('../img/home/footer05.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer div.contact div.people>div:last-child {
+    margin: 0;
+    background-image: url('../img/home/footer06.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*底部结束*/

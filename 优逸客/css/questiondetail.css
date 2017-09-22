@@ -1,0 +1,320 @@
+/*顶部开始*/
+*{
+	margin: 0;
+	padding: 0
+}
+body{
+	background-color: #f5f6fa;
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+  background-color: #0078e6;
+  overflow: hidden;
+	position: fixed;
+}
+header div.caption{
+  width: 2.01rem;
+  height: 0.67rem;
+  background-color: #0078e6;
+  margin: 0.13rem auto 0;
+}
+header div.caption > a{
+  width: 0.7rem;
+  height: 0.67rem;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.7rem 0.67rem;
+  float: left;
+}
+header div.caption > p{
+  color: #ffffff;
+  font-size:0.34rem;
+  float: left;
+  height: 100%;
+  line-height: 0.67rem;
+  margin-left: 0.16rem;
+}
+/*顶部结束*/
+/*banner strt*/
+section.banner{
+  width: 100%;
+  height: 3.09rem;;
+  background-color: #f5f6fa;
+}
+section.banner a{
+  width: 100%;
+  height: 2.8rem;
+  display: block;
+}
+section.banner a img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*banner end*/
+/*关于我们开始*/
+section.about{
+	width: 100%;
+	height: 14rem;
+	background-color: #f5f6fa;
+}
+section.about div.caption{
+  width: 100%;
+  height: 0.62rem;
+  background-color: #f5f6fa;
+  line-height: 0.62rem;
+	padding-left: 0.12rem;
+}
+section.about div.caption a:first-child{
+  text-decoration: none;
+  color: #494747;
+  font-size: 0.22rem;
+  margin: 0 0.14rem;
+  font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.about div.caption span{
+	width: 0.16rem;
+	height: 0.2rem;
+	margin-top: 0.26rem;
+	font-size: 0.22rem;
+	margin-top: 0.24rem;
+	text-align: center;
+	color: #494747;
+	float: left;
+	background-image: url('../img/jiantou.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section.about div.caption a:last-child{
+	color: #494747;
+	font-size: 0.22rem;
+	margin: 0 0.14rem;
+	font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.about div.text{
+	width: 7.02rem;
+	height: 13.3rem;
+	background-color: #ffffff;
+	margin-left: 0.24rem;
+	overflow: hidden;
+}
+section.about div.text div.letter{
+	width:100%;
+	height: 0.23rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.19rem;
+	font-size: 0.23rem;
+	color: #4d3f3f;
+	margin-top: 0.3rem;
+	font-weight: bold;
+	line-height: 0.23rem;
+}
+section.about div.text div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #b8b8b8;
+	margin-top: 0.14rem;
+	margin-bottom: 0.18rem;
+	margin-left: 0.43rem;
+}
+section.about div.text p{
+	width: 6.4rem;
+	background-color: #ffffff;
+	font-size: 0.23rem;
+	color: #666666;
+	margin-left: 0.42rem;
+	margin-bottom: 0.45rem;
+}
+section.about div.text p:nth-child(2){
+	height: 2.61rem;
+}
+section.about div.text p:first-child{
+	margin-bottom: 0.45rem;
+	height: 2.95rem;
+}
+section.about div.text div.box{
+	width: 100%;
+	height: 3.63rem;
+	background-color: #474747;
+}
+section.about div.text p:last-child{
+	height: 2.5rem;
+	margin-top: 0.3rem;
+	border-bottom: 1px dashed #b8b8b8;
+}
+section.about div.text div.share{
+	width: 100%;
+	height: 0.4rem;
+	background-color: #ffffff;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	box-sizing: border-box;
+	line-height: 0.4rem;
+	color: #7e7e7e;
+}
+section.about div.text div.share p{
+	width: 0.95rem;
+	height: 100%;
+	float: left;
+	line-height: 0.4rem;
+	font-size: 0.23rem;
+}
+section.about div.text div.share a{
+	width: 0.4rem;
+	height: 0.4rem;
+	display: block;
+	background-image: url('../img/share01.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.4rem 0.4rem;
+	float: left;
+	margin-left: 0.2rem;
+}
+section.about div.text div.share a.web2{
+	background-image: url('../img/share02.png');
+}
+section.about div.text div.share a.web3{
+	background-image: url('../img/share03.png');
+}
+section.about div.text div.share a.web4{
+	background-image: url('../img/share04.png');
+}
+section.about div.text div.share a.web5{
+	background-image: url('../img/share05.png');
+}
+section.about div.text div.share a.web6,section.about div.text div.share a.web7{
+	float: right;
+}
+section.about div.text div.share a.web6{
+	background-image: url('../img/share07.png');
+}
+section.about div.text div.share a.web7{
+	background-image: url('../img/share06.png');
+}
+/*关于我们结束*/
+/*篇目开始*/
+section.article{
+	width: 100%;
+	height: 1.22rem;
+	background-color: #f5f6fa;
+	padding-top: 0.25rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+}
+section.article > div{
+	width: 100%;
+	height: 0.23rem;
+	background-color: #f5f6fa;
+}
+section.article > div:first-child{
+	margin-bottom: 0.2rem;
+}
+section.article > div > p:first-child{
+	font-size: 0.23rem;
+	color: #000;
+	line-height: 0.23rem;
+	float: left;
+	height: 100%;
+}
+section.article > div > p:last-child{
+	font-size: 0.22rem;
+	height: 100%;
+	line-height: 0.23rem;
+	color: #53c7fe;
+}
+/*篇目结束*/
+/*相关问题开始*/
+section.culture{
+	width: 7.03rem;
+	height: 3rem;
+	background-color: #ffffff;
+	padding-left: 0.19rem;
+	box-sizing: border-box;
+	padding: 0.3rem;
+	margin-bottom: 0.11rem;
+	margin-left: 0.24rem;
+}
+section.culture div.letter{
+	padding:0 0.2rem;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.21rem;
+	font-size: 0.22rem;
+	color: #333;
+	font-weight: bold;
+	height: 0.24rem;
+	line-height: 0.22rem;
+}
+section.culture div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #b8b8b8;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.culture  ul{
+	width: 100%;
+	height: 2.3rem;
+	margin-left: 0.24rem;
+	margin-top: 0.3rem;
+	background-color: #ffffff;
+	list-style: none;
+}
+section.culture > ul > li{
+	width: 100%;
+	height: 0.23rem;
+	background-color: #ffffff;
+	margin-top: 0.3rem;
+}
+section.culture ul li div.circle{
+	width: 0.12rem;
+	height: 100%;
+	line-height: 0.23rem;
+	background-image: url('../img/question01.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.24rem 0.24rem;
+	margin-left: 0.11rem;
+	float: left;
+	margin-right: 0.2rem;
+}
+section.culture ul li > p{
+	width: 5.28rem;
+	height: 100%;
+	font-size: 0.22rem;
+	color: #999999;
+	float: left;
+	line-height: 0.23rem;
+}
+section.culture ul li:last-child > p{
+	color: #6acfff;
+}
+/*相关问题结束*/
+/*底部开始*/
+footer{
+	width: 100%;
+	height: 1.2rem;
+	background-color: #f5f6fa;
+}
+footer p:first-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+	padding-top: 0.18rem;
+	box-sizing: border-box;
+	margin-bottom: 0.2rem;
+}
+footer p:last-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+}
+/*底部结束*/

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        table {
+            width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            /*            消除表格间距*/
+        }
+        
+        tr:nth-child(2n) {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        th,
+        td {
+            padding: 10px 10px;
+            text-align: center;
+            line-height: 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        button.del {
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font: 14px/100% Arial, Helvetica, sans-serif;
+            padding: .5em 2em .55em;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+            -webkit-border-radius: .5em;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+            color: #fef4e9;
+            background: #f78d1d;
+            border: solid 1px #980c10;
+            background-color: #d81b21;
+            color: #faddde;
+        }
+        
+        div.user {
+            width: 800px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        div.user form input {
+            height: 30px;
+            border-radius: 2px;
+            margin-top: 30px;
+            outline: none;
+            border: none;
+            box-shadow: 1px 1px 1px #333;
+            margin-left: 5px;
+            padding-left: 4px;
+        }
+        
+        div.user button.addData {
+            border-radius: 4px;
+            float: right;
+            margin-top: 40px;
+            cursor: pointer;
+            text-align: center;
+            font: 14px/100% Arial, Helvetica, sans-serif;
+            padding: .5em 2em .55em;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+            -webkit-border-radius: .5em;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+            color: #fef4e9;
+            background: #f78d1d;
+        }
+    }
+    div.search {
+        margin-top: 65px;
+    }
+
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        //重要的事情说三遍！！！form里不能放button，form里不能放button，form里不能放button。用一个小时调试换取的代价。
+        //    功能：增、删、改、查
+        /*
+        增
+        1.按钮绑定事件，
+        2.克隆节点，获取表单数据，赋予克隆的节点
+        3.插入节点
+        改
+        1.双击表格，判断条件，委派元素，
+        2.插入输入框，将td的值赋予value。
+        3.当输入框失去焦点，保存输入框的值，删除创建的输入框节点，将新值赋予td。*/
+        function handle() {
+            //增
+            let addData = $('button.addData');
+            let tbody = $('tbody');
+            let trNode = $('tbody>tr:first-child'); //获得数据的元素节点
+            function add() {
+                let newTrNode = trNode.clone(true); //要插入的节点
+            console.log(newTrNode)
+                let dataNode = newTrNode.find('td'); //获取插入行的节点
+                let insertData = $('form>input') //获取要插入的数据
+                insertData.text(
+                    (index, value) => {
+                        dataNode.eq(index).text(value.value);
+                    }
+                );
+                addData.click( function() {
+                    tbody.append(newTrNode);
+                    console.log(newTrNode)
+                    insertData.val('');
+                })
+            }
+            window.addEventListener('keyup', add);
+            //删
+            //            let delBtn=document.querySelectorAll('table>tbody>tr>td>button');//获取删除按钮对象 方式二：通过遍历批量删除元素节点
+            function del(event) {
+                let delNode = event.target;
+                if (delNode.tagName.toLowerCase() == 'button') {
+                    let parentNode = delNode.parentElement.parentElement//获取要删除的父对象
+                    this.removeChild(parentNode); //通过事件代理方式批量删除元素节点
+                }
+            }
+            tbody.click(del);
+            //改
+            function change(event) {
+                let changeNode = event.target;
+                if (changeNode.get(0).tagName.toLowerCase == 'td' && changeNode.children(':first').get(0).tagName.toLowerCase != 'button' || changeNode.children(':first')== null) { //由于td文本的第一个是文本节点，所以用childNodes更方便一些
+                    let input = $('<input></input>');
+                    input.val(changeNode.text());
+                    input.attr('size',6);
+                    changeNode.append(input);
+                    let text = changeNode.children(':first').eq(0);
+                    changeNode.remove(text);
+                    text.get(0) = null; //此处text是一个对象，不能直接赋值。
+                    let value;
+                    input.onfocus = function() {
+                        window.onkeyup = function(event) {
+                            //                            if (input.parentElement.tagName.toLowerCase() == 'td') {
+                            value = input.value; //由于add函数也有keyup事件所以会有找不到value的报错，尽管此处报错无影响，但应减少报错.解决方案，指定if或将add函数的绑定事件对象更换。
+                            if (event.keyCode == 13) {
+                                input.get(0) = null;
+                                changeNode.text(value);
+                            }
+                            //                            }
+                        }
+                    }
+                    input.onblur = function() { //必须点击后才能失去焦点
+                        //                        changeNode.removeChild(input);
+                        input.get(0) = null;
+                        changeNode.text(value);
+                    }
+                }
+            }
+            tbody.get(0).addEventListener('dblclick', change); //用户体验：避免用户单击旁边位置的时候触发事件。
+            //查
+
+        }
+        window.addEventListener('load', handle);
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>民族</th>
+                <th>手机</th>
+                <th>籍贯</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>17</td>
+                <td>汉</td>
+                <td>122324</td>
+                <td>上海</td>
+                <td>
+                    <button class="del">删除</button>
+                </td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>20</td>
+                <td>汉</td>
+                <td>56443</td>
+                <td>深圳</td>
+                <td>
+                    <button class="del">删除</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="user">
+        <form class="input">
+            &nbsp;&nbsp;姓名：<input type="text" size="10" placeholder="name" name="" value="" /> <br />&nbsp;&nbsp;年龄：
+            <input type="text" size="5" placeholder="age" name="" value="" /> <br />&nbsp;&nbsp;民族：
+            <input type="text" size="5" placeholder="nation" name="" value="" /> <br />&nbsp;&nbsp;手机：
+            <input type="text" size="40" placeholder="phone" name="" value="" /><br /> &nbsp;&nbsp;籍贯：
+            <input type="text" size="30" placeholder="address" name="" value="" />
+        </form>
+        <button class="addData">添加</button>
+        <!--<div class="search">
+            <form>
+                <input type="text" value="" name="" placeholder="请输入要查找的姓名" size="5" />
+            </form>
+            <button>搜索</button>
+        </div>-->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+/*顶部开始*/
+*{
+	margin: 0;
+	padding: 0
+}
+body{
+	background-color: #f5f6fa;
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+ 	background-color: #0078e6;
+  	overflow: hidden;
+	position: fixed;
+	z-index: 999;
+}
+header div.caption{
+  width: 2.01rem;
+  height: 0.67rem;
+  background-color: #0078e6;
+  margin: 0.13rem auto 0;
+}
+header div.caption > a{
+  width: 0.7rem;
+  height: 0.67rem;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.7rem 0.67rem;
+  float: left;
+}
+header div.caption > p{
+  color: #ffffff;
+  font-size:0.34rem;
+  float: left;
+  height: 100%;
+  line-height: 0.67rem;
+  margin-left: 0.16rem;
+}
+/*顶部结束*/
+/*banner strt*/
+section.banner{
+  width: 100%;
+  height: 3.09rem;;
+  background-color: #f5f6fa;
+}
+section.banner a{
+  width: 100%;
+  height: 2.8rem;
+  display: block;
+}
+section.banner a img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*banner end*/
+/*关于我们开始*/
+section.about{
+	width: 100%;
+	height: 7.68rem;
+	background-color: #f5f6fa;
+}
+section.about div.caption{
+  width: 100%;
+  height: 0.62rem;
+  background-color: #f5f6fa;
+  line-height: 0.62rem;
+	padding-left: 0.12rem;
+}
+section.about div.caption a:first-child{
+  text-decoration: none;
+  color: #494747;
+  font-size: 0.22rem;
+  margin: 0 0.14rem;
+  font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.about div.caption span{
+	width: 0.16rem;
+	height: 0.2rem;
+	margin-top: 0.26rem;
+	font-size: 0.22rem;
+	margin-top: 0.24rem;
+	text-align: center;
+	color: #494747;
+	float: left;
+	background-image: url('../img/jiantou.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section.about div.caption a:last-child{
+	color: #494747;
+	font-size: 0.22rem;
+	margin: 0 0.14rem;
+	font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.about div.image{
+	width: 7.03rem;
+	height: 2.24rem;
+	margin-left: 0.24rem;
+	background-color: red;
+	margin-bottom: 0.12rem;
+}
+section.about div.image a{
+	width: 25%;
+	height: 100%;
+	display: block;
+	background-color: #ffffff;
+	float: left;
+	text-decoration: none;
+	padding-top: 0.26rem;
+	padding-left: 0.47rem;
+	box-sizing: border-box;
+}
+section.about div.image a > img{
+	width: 1.21rem;
+	height: 1.21rem;
+}
+section.about div.image a > p{
+	font-size: 0.23rem;
+	color: #6d6d6d;
+}
+section.about div.text{
+	width: 7.02rem;
+	height: 4.67rem;
+	background-color: #ffffff;
+	margin-left: 0.24rem;
+	overflow: hidden;
+}
+section.about div.text div.letter{
+	width:100%;
+	height: 0.23rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.19rem;
+	font-size: 0.23rem;
+	color: #474747;
+	margin-top: 0.3rem;
+}
+section.about div.text div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #dddddd;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.about div.text p{
+	width: 6.4rem;
+	background-color: #ffffff;
+	font-size: 0.23rem;
+	color: #666666;
+	margin-left: 0.42rem;
+}
+section.about div.text p:first-child{
+	margin-bottom: 0.45rem;
+}
+section.about div.text p.word{
+	color: #01b5ff;
+}
+/*关于我们结束*/
+/*行业薪资开始*/
+section.culture{
+	width: 7.03rem;
+	height: 5.76rem;
+	background-color: #ffffff;
+	padding-left: 0.19rem;
+	box-sizing: border-box;
+	padding: 0.3rem;
+	margin-bottom: 0.11rem;
+	margin-left: 0.24rem;
+}
+section.culture div.letter{
+	padding:0 0.2rem;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.21rem;
+	font-size: 0.22rem;
+	color: #474747;
+}
+section.culture div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #dddddd;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.culture div.image{
+	width: 5.97rem;
+	height: 3.57rem;
+	background-color: #ffffff;
+	margin:0.36rem auto;
+}
+section.culture div.image > div{
+	width: 5.97rem;
+	height:3.57rem;
+	float: left;
+	margin-right: 0.72rem;
+	background-image: url('../img/web/qd2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 5.97rem 4.22rem;
+}
+section.culture > p{
+	font-size: 0.25rem;
+	color: #5e585c;
+	line-height: 0.25rem;
+	text-align: center;
+}
+/*行业薪资结束*/
+/*可就业岗位开始*/
+section.enterprise{
+	width: 7.03rem;
+	height: 5.58rem;
+	padding-top: 0.3rem;
+	padding-left: 0.19rem;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	margin-left: 0.24rem;
+	margin-bottom: 0.12rem;
+}
+section.enterprise div.letter{
+	padding:0 0.2rem;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.21rem;
+	font-size: 0.22rem;
+	color: #474747;
+}
+section.enterprise div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #dddddd;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.enterprise ul{
+	width: 100%;
+	height: 4.36rem;
+	background-color: #ffffff;
+	list-style: none;
+}
+section.enterprise ul li{
+	width: 100%;
+	height: 0.56rem;
+	background-color: #ffffff;
+	margin-bottom: 0.2rem;
+}
+section.enterprise ul li >div:first-child{
+	width: 0.56rem;
+	height: 100%;
+	background-image: url('../img/web/qd-r1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.56rem 0.56rem;
+	float: left;
+}
+section.enterprise ul li:nth-child(2) >div:first-child{
+	background-image: url('../img/web/qd-r2.png');
+}
+section.enterprise ul li:nth-child(3) >div:first-child{
+	background-image: url('../img/web/qd-r3.png');
+}
+section.enterprise ul li:nth-child(4) >div:first-child{
+	background-image: url('../img/web/qd-r1.png');
+}
+section.enterprise ul li:nth-child(5) >div:first-child{
+	background-image: url('../img/web/qd-r2.png');
+}
+section.enterprise ul li:nth-child(6) >div:first-child{
+	background-image: url('../img/web/qd-r3.png');
+}
+section.enterprise ul li >div:last-child{
+	width: 4rem;
+	height: 100%;
+	padding-top: 0.08rem;
+	box-sizing: border-box;
+	margin-left: 0.7rem;
+}
+section.enterprise ul li >div:last-child p:first-child{
+	font-size: 0.24rem;
+	color: #7ed5ff;
+	height: 0.24rem;
+	line-height: 0.24rem;
+}
+section.enterprise ul li >div:last-child p:last-child{
+	font-size: 0.15rem;
+	color: #888585;
+	height: 0.15rem;
+	line-height: 0.15rem;
+	margin-top: 0.07rem;
+}
+/*可就业岗位结束*/
+/*就业学员薪资开始*/
+section.money{
+	width: 7.03rem;
+	height: 4.98rem;
+	padding-top: 0.3rem;
+	padding-left: 0.19rem;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	margin-left: 0.24rem;
+	margin-bottom: 0.12rem;
+	background-color: #ffffff;
+}
+section.money div.letter{
+	padding:0 0.2rem;
+	border-left: 0.04rem solid #01b5ff;
+	font-size: 0.22rem;
+	color: #474747;
+}
+section.money div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #dddddd;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.money ul.caption{
+	width: 100%;
+	height: 0.23rem;
+	list-style: none;
+	padding-left: 0.28rem;
+	box-sizing: border-box;
+}
+section.money ul.caption > li{
+	font-size: 0.23rem;
+	height: 100%;
+	line-height: 0.23rem;
+	color: #555555;
+	float: left;
+	text-align: center;
+}
+section.money ul.caption > li:nth-child(2){
+	margin-left: 1.02rem;
+}
+section.money ul.caption > li:nth-child(3){
+	margin-left: 2.2rem;
+}
+section.money ul.text{
+	width: 100%;
+	height: 0.74rem;
+	background-color: #ffffff;
+	list-style: none;
+	border-left: 1px dashed #01b5ff;
+	padding-left: 0.28rem;
+	box-sizing: border-box;
+	position: relative;
+}
+section.money ul.text div.circle{
+	position: absolute;
+	left: -0.08rem;
+	top: 50%;
+	width: 0.18rem;
+	height: 0.17rem;
+	background-color: #91dfff;
+	border-radius: 50%;
+}
+section.money ul.text div.circle div{
+	width: 0.11rem;
+	height: 0.11rem;
+	background-color: #01b5ff;
+	border-radius: 50%;
+	margin: 0.04rem auto;
+}
+section.money ul.text > li{
+	font-size:0.21rem;
+	line-height: 0.74rem;
+	float: left;
+}
+section.money ul.text > li:first-child{
+	color: #999999;
+}
+section.money ul.text > li:nth-child(3){
+	color: #ffbd4e;
+	margin-left: 0.46rem;
+}
+section.money ul.text > li:nth-child(4){
+	color: #828282;
+	margin-left: 0.35rem;
+}
+/*就业学院薪资结束*/
+/*课程安排开始开始*/
+section.lession{
+	width: 7.03rem;
+	height: 4.96rem;
+	padding-top: 0.3rem;
+	padding-left: 0.19rem;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	margin-left: 0.24rem;
+	margin-bottom: 0.1rem;
+}
+section.lession div.letter{
+	padding:0 0.2rem;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.21rem;
+	font-size: 0.22rem;
+	color: #474747;
+}
+section.lession div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #dddddd;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.lession img{
+	width: 100%;
+	height: 3.72rem;
+}
+/*课程安排结束*/
+/*底部开始*/
+footer{
+	width: 100%;
+	height: 1.2rem;
+	background-color: #f5f6fa;
+}
+footer p:first-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+	padding-top: 0.18rem;
+	box-sizing: border-box;
+	margin-bottom: 0.2rem;
+}
+footer p:last-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+}
+/*底部结束*/

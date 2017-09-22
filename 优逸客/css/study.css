@@ -1,0 +1,223 @@
+/*顶部开始*/
+*{
+	margin: 0;
+	padding: 0
+}
+body{
+	background-color: #f5f6fa;
+}
+header{
+  width: 100%;
+  height: 0.92rem;
+  background-color: #0078e6;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+}
+header div.caption{
+  width: 2.01rem;
+  height: 0.67rem;
+  background-color: #0078e6;
+  margin: 0.13rem auto 0;
+}
+header div.caption > a{
+  width: 0.7rem;
+  height: 0.67rem;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.7rem 0.67rem;
+  float: left;
+}
+header div.caption > p{
+  color: #ffffff;
+  font-size:0.34rem;
+  float: left;
+  height: 100%;
+  line-height: 0.67rem;
+  margin-left: 0.16rem;
+}
+/*顶部结束*/
+/*banner strt*/
+section.banner{
+  width: 100%;
+  height: 3.09rem;;
+  background-color: #f5f6fa;
+}
+section.banner a{
+  width: 100%;
+  height: 2.8rem;
+  display: block;
+}
+section.banner a img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*banner end*/
+/*关于我们开始*/
+section.about{
+	width: 100%;
+	height: 14.7rem;
+	background-color: #f5f6fa;
+}
+section.about div.caption{
+  width: 100%;
+  height: 0.62rem;
+  background-color: #f5f6fa;
+  line-height: 0.62rem;
+	padding-left: 0.12rem;
+}
+section.about div.caption a:first-child{
+  text-decoration: none;
+  color: #494747;
+  font-size: 0.22rem;
+  margin: 0 0.14rem;
+  font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.about div.caption span{
+	width: 0.16rem;
+	height: 0.2rem;
+	margin-top: 0.26rem;
+	font-size: 0.22rem;
+	margin-top: 0.24rem;
+	text-align: center;
+	color: #494747;
+	float: left;
+	background-image: url('../img/jiantou.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section.about div.caption a:last-child{
+	color: #494747;
+	font-size: 0.22rem;
+	margin: 0 0.14rem;
+	font-weight: bold;
+	text-decoration: none;
+	float: left;
+}
+section.about div.text{
+	width: 7.02rem;
+	height: 14.6rem;
+	background-color: #ffffff;
+	margin-left: 0.24rem;
+	overflow: hidden;
+}
+section.about div.text div.letter{
+	width:0.72rem;
+	height: 0.23rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+	border-left: 0.04rem solid #01b5ff;
+	margin-left: 0.19rem;
+	font-size: 0.23rem;
+	color: #474747;
+	margin-top: 0.3rem;
+}
+section.about div.text div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #dddddd;
+	margin-top: 0.14rem;
+	margin-bottom: 0.1rem;
+	margin-left: 0.43rem;
+}
+section.about div.text p{
+	width: 6.4rem;
+	background-color: #ffffff;
+	font-size: 0.23rem;
+	color: #666666;
+	margin-left: 0.42rem;
+	margin-bottom: 0.49rem;
+}
+section.about div.text p:last-child{
+	height: 2.6rem;
+}
+section.about div.text p:first-child{
+	margin-bottom: 0.45rem;
+}
+section.about div.text div.box{
+	width: 100%;
+	height: 3.64rem;
+	background-color: #474747;
+}
+section.culture div.line{
+	width: 6.4rem;
+	height: 0;
+	border-bottom: 1px dashed #b8b8b8;
+	margin-top: 0.31rem;
+	margin-bottom: 0.26rem;
+	margin-left: 0.43rem;
+}
+section.about div.text div.share{
+	width: 100%;
+	height: 0.4rem;
+	background-color: #ffffff;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	box-sizing: border-box;
+	line-height: 0.4rem;
+	color: #7e7e7e;
+}
+section.about div.text div.share p{
+	width: 0.95rem;
+	height: 100%;
+	float: left;
+	line-height: 0.4rem;
+	font-size: 0.23rem;
+}
+section.about div.text div.share a{
+	width: 0.4rem;
+	height: 0.4rem;
+	display: block;
+	background-image: url('../img/share01.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.4rem 0.4rem;
+	float: left;
+	margin-left: 0.2rem;
+}
+section.about div.text div.share a.web2{
+	background-image: url('../img/share02.png');
+}
+section.about div.text div.share a.web3{
+	background-image: url('../img/share03.png');
+}
+section.about div.text div.share a.web4{
+	background-image: url('../img/share04.png');
+}
+section.about div.text div.share a.web5{
+	background-image: url('../img/share05.png');
+}
+section.about div.text div.share a.web6,section.about div.text div.share a.web7{
+	float: right;
+}
+section.about div.text div.share a.web6{
+	background-image: url('../img/share07.png');
+}
+section.about div.text div.share a.web7{
+	background-image: url('../img/share06.png');
+}
+/*关于我们结束*/
+/*底部开始*/
+footer{
+	width: 100%;
+	height: 1.2rem;
+	background-color: #f5f6fa;
+}
+footer p:first-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+	padding-top: 0.18rem;
+	box-sizing: border-box;
+	margin-bottom: 0.2rem;
+}
+footer p:last-child{
+	color: #666;
+	font-size: 0.2rem;
+	text-align: center;
+}
+/*底部结束*/

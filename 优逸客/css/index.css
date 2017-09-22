@@ -1,0 +1,363 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*顶部开始*/
+header{
+	width: 100%;
+	height: 0.92rem;
+  background-color: #0078e6;
+  overflow: hidden;
+  position: fixed;
+}
+header div.caption{
+  width: 2.01rem;
+  height: 0.67rem;
+  background-color: #0078e6;
+  margin: 0.13rem auto 0;
+}
+header div.caption > a{
+  width: 0.7rem;
+  height: 0.67rem;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  background-size: 0.7rem 0.67rem;
+}
+header div.caption > p{
+  color: #ffffff;
+  font-size:0.34rem;
+  float: left;
+  height: 100%;
+  line-height: 0.67rem;
+  margin-left: 0.16rem;
+}
+/*顶部结束*/
+/*banner strt*/
+section.banner{
+  width: 100%;
+  height: 3.09rem;;
+  background-color: #f5f6fa;
+}
+section.banner a{
+  width: 100%;
+  height: 2.8rem;
+  display: block;
+}
+section.banner a img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*banner end*/
+/*menu strt*/
+section.menu{
+  width: 100%;
+  background-color: #f5f6fa;
+}
+/*第一行开始*/
+section.menu ul{
+  width: 7.1rem;
+  height: 2.24rem;
+  background-color: #f5f6fa;
+  margin: 0 0.2rem;
+  list-style: none;
+}
+section.menu ul li{
+  width:1.55rem;
+  height: 100%;
+  background-color: #f1f2f6;
+  float: left;
+  margin-right: 0.3rem;
+}
+section.menu ul li:last-child{
+  margin: 0;
+}
+section.menu ul li a{
+  width: 100%;
+  height: 1.56rem;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+  display: block;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+  box-sizing: border-box;
+  margin-bottom: 0.16rem;
+}
+section.menu ul.first-line li:first-child a > div{
+  width: 1.05rem;
+  height: 1.05rem;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -0.01rem -0.01rem;
+  background-size: 2rem;
+  margin-bottom: 0.16rem;
+}
+section.menu ul.first-line li:nth-child(2) a > div{
+  width: 1.05rem;
+  height: 1.05rem;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -1.07rem -0.02rem;
+  background-size: 2rem;
+  margin-bottom: 0.16rem;
+}
+section.menu ul.first-line li:nth-child(3) a > div{
+  width: 1.05rem;
+  height: 1.05rem;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -0.01rem -1.12rem;
+  background-size: 2rem;
+  margin-bottom: 0.16rem;
+}
+section.menu ul.first-line li:nth-child(4) a > div{
+  width: 1.05rem;
+  height: 1.05rem;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -1.07rem -1.12rem;
+  background-size: 2rem;
+  margin-bottom: 0.16rem;
+}
+section.menu ul li > p{
+  font-size: 0.19rem;
+  color: #363738;
+  text-align: center;
+  font-weight: 800;
+}
+/*第一行结束*/
+/*第二行开始*/
+section.menu ul.second-line li:nth-child(1) a > div{
+  width: 1.05rem;
+  height: 1.05rem;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -0.01rem -2.21rem;
+  background-size: 2rem;
+  margin-bottom: 0.16rem;
+}
+section.menu ul.second-line li:nth-child(2) a > div{
+  width: 1.05rem;
+  height: 1.05rem;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -1.03rem -2.21rem;
+  background-size: 2rem;
+  margin-bottom: 0.16rem;
+}
+section.menu ul.second-line li:nth-child(3) a > div{
+  width: 1.05rem;
+  height: 1.05rem;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -0.01rem -3.3rem;
+  background-size: 2rem;
+  margin-bottom: 0.16rem;
+}
+section.menu ul.second-line li:nth-child(4) a > div{
+  width: 1.05rem;
+  height: 1.05rem;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -1.07rem -3.3rem;
+  background-size: 2rem;
+  margin-bottom: 0.16rem;
+}
+/*第二行结束*/
+/*menu end*/
+/*服务体系开始*/
+section.server{
+  width: 100%;
+  background-color: #fff;
+}
+section.server div.caption{
+  width: 100%;
+  height: 0.63rem;
+  border-bottom: 1px solid #e8e8e8;
+  text-align: center;
+  line-height: 0.63rem;
+  font-size: 0.24rem;
+  color: #1378ba;
+  background-color: #ffffff;
+}
+section.server ul.col1{
+  width: 100%;
+  height: 2.18rem;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  list-style: none;
+}
+section.server ul.col1 li{
+  width: 50%;
+  height: 100%;
+  padding: 0.38rem 0rem 0.48rem 0.16rem;
+  border-right: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  float:left;
+}
+section.server ul.col1 li:last-child{
+  border: none;
+}
+section.server ul.col1 li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+section.server ul.col1 li > a div.text{
+  width:1.3rem;
+  height: 0.58rem;
+  float: left;
+}
+section.server ul.col1 li > a div.text p:first-child{
+  font-size: 0.23rem;
+  color: #7c7c7c;
+  margin-bottom: 0.17rem;
+}
+section.server ul.col1 li > a div.text p:last-child{
+  font-size: 0.17rem;
+  color: #cfcfcf;
+}
+section.server ul.col1 li > a div.image{
+  width: 1.5rem;
+  height: 100%;
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -0.01rem -4.41rem;
+  background-size: 2rem;
+  float: right;
+}
+section.server ul.col1 li:last-child > a div.image{
+  background-position: -0.03rem -5.95rem;
+}
+section.server ul.col2{
+  width: 100%;
+  height: 1.38rem;
+  background-color: #ffffff;
+  list-style: none;
+}
+section.server ul.col2 li{
+  width: 33.33%;
+  height: 100%;
+  border-right: 1px solid #e8e8e8;
+  padding: 0.4rem 0 0.38rem 0.2rem;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  float: left;
+}
+section.server ul.col2 li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+section.server ul.col2 li div.image{
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -0.03rem -7.42rem;
+  background-size: 2rem;
+  float: left;
+  width: 0.6rem;
+  height: 0.61rem;
+}
+section.server ul.col2 li:nth-child(2) div.image{
+  background-position: -0.72rem -7.42rem;
+}
+section.server ul.col2 li:nth-child(3) div.image{
+  background-position: -1.39rem -7.42rem;
+}
+section.server ul.col2 li div.text{
+  float: right;
+  height: 0.58rem;
+  margin-right: 0.24rem;
+}
+section.server ul.col2 li div.text p:first-child{
+  font-size: 0.24rem;
+  color: #000000;
+}
+section.server ul.col2 li div.text p:last-child{
+  font-size: 0.18rem;
+  color: #999999;
+  line-height: 0.3rem;
+}
+/*服务体系结束*/
+/*底部结束*/
+footer{
+  width: 100%;
+  height: 0.8rem;
+  margin: 0.22rem auto 0.4rem;
+  background-color: #f5f6fa;
+  padding-top: 0.22rem;
+}
+footer > div{
+  width: 33.333%;
+  height: 100%;
+  float: left;
+}
+footer > div:first-child{
+  padding-top: 0.24rem;
+  padding-left: 0.2rem;
+  box-sizing: border-box;
+}
+footer > div:first-child div:first-child{
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -1.6rem -4.42rem;
+  background-size: 2rem;
+  width: 0.31rem;
+  height: 0.31rem;
+  float: left;
+  margin-right: 0.13rem;
+}
+footer > div:first-child div:last-child{
+  font-size: 0.22rem;
+  color: #7e7e7e;
+  float: left;
+}
+footer > div:nth-child(2){
+  background-color: #ff7e00;
+  border-radius: 0.08rem;
+  padding-top: 0.24rem;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+  box-shadow: 0.04rem 0.04rem 0.05rem 0.05rem #ff7e00;
+}
+footer > div:nth-child(2) > div:first-child{
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -1.6rem -4.82rem;
+  background-size: 2rem;
+  width: 0.31rem;
+  height: 0.31rem;
+  float: left;
+}
+footer > div:nth-child(2) > div:last-child{
+  font-size: 0.26rem;
+  color: #ffffff;
+  font-weight: 600;
+  float: left;
+  margin-left: 0.26rem;
+}
+footer > div:last-child{
+  padding-left: 0.99rem;
+  padding-top: 0.26rem;
+  box-sizing: border-box;
+}
+footer > div:last-child div:first-child{
+  background-image: url('../img/shouye6.png');
+  background-repeat: no-repeat;
+  background-position: -1.62rem -5.3rem;
+  background-size: 2rem;
+  width: 0.33rem;
+  height: 0.31rem;
+  float: left;
+  margin-right: 0.1rem;
+}
+footer > div:last-child div:last-child{
+  font-size: 0.23rem;
+  color: #797979;
+  float: left;
+}
+/*底部结束*/
