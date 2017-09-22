@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 0.32rem;
+            color: #333;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            position: relative;
+        }
+        
+        input {
+            outline: none;
+            border: none;
+            border: 0.01rem solid blue;
+            width: 80%;
+            height: 0.4rem;
+            margin: 0 auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto 0;
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
+        
+        div.dock {
+            width: 100%;
+            height: 0.4rem;
+        }
+        
+        dl {
+            width: 80%;
+            padding-left: 10%;
+            border-bottom: 1px solid red;
+        }
+        
+        dt {
+            padding-bottom: 0.1rem;
+            border-bottom: 1px solid blue;
+        }
+        
+        dd {
+            padding: 0.03rem 0;
+            border-bottom: 1px solid orange;
+        }
+        
+        dd a {
+            text-decoration: none;
+        }
+        
+        div.contain {
+            width: 0.1rem;
+            height: 100%;
+            top: 0;
+            right: 0.1rem;
+            position: absolute;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+        }
+        
+        div.list {
+            width: 0.1rem;
+            height: auto;
+            position: fixed;
+            right: 0.1rem;
+        }
+        
+        div.list ul {
+            list-style: none;
+        }
+        .dlcopy{}
+
+    </style>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 minimum-scale=1.0 maximum-scale=1.0 user-scalable=no">
+    <script src="rem.js"></script>
+    <script>
+        function handle() {
+            let mailList = [{
+                    'name': '张三',
+                    'phone': '12443',
+                    'pinyin': 'zhangsan'
+                },
+                {
+                    'name': '李四',
+                    'phone': '433343',
+                    'pinyin': 'lisi'
+                },
+                {
+                    'name': '王五',
+                    'phone': '4243',
+                    'pinyin': 'wangwu'
+                },
+                {
+                    'name': '吴六',
+                    'phone': '432443',
+                    'pinyin': 'wuliu'
+                },
+                {
+                    'name': '赵七',
+                    'phone': '32443',
+                    'pinyin': 'zhaoqi'
+                },
+                {
+                    'name': '风九',
+                    'phone': '124543',
+                    'pinyin': 'fengjiu'
+                },
+                {
+                    'name': '麻四',
+                    'phone': '54443',
+                    'pinyin': 'masi'
+                },
+                {
+                    'name': '张强',
+                    'phone': '6798443',
+                    'pinyin': 'zhangqiang'
+                }
+            ]; //通讯录对象
+
+            function setMailList(key, mailObj) { //若用户localStrage首次使用，则存入书据。
+                if (!localStorage.getItem(key)) {
+                    let mailList = JSON.stringify(mailObj);
+                    localStorage.setItem(key, mailList);
+                } else {
+                    return;
+                }
+            }
+            setMailList('mailList', mailList);
+            //按字母排序
+            let letter;//存入已排号序的数组
+
+            function addLetter(mailObj) {
+                let capitalLetter = {};
+                mailObj.forEach(
+                    (value, index, arr) => {
+                        let letter = mailObj[index]['pinyin'].charAt(0).toUpperCase(); //得到通讯录对象的首字母大写
+                        if (!capitalLetter[letter]) {
+                            //                    capitalLetter[letter]=mailObj[index];//由于可能后面还有重复的字母，所以不能为它重复赋值，只能在遍历后在后面插入,所以如果不存在此字母，先将其赋予空的包含对象的数组
+                            capitalLetter[letter] = [];
+                        }
+                        capitalLetter[letter].push(mailObj[index]); //当字母不存在时存入，当判断存在时也插入，只是判断不存在时需要创建一个空的数组对象用以存储数据
+                    }
+                );
+                letter = capitalLetter;
+                capitalLetter = Object.keys(capitalLetter).sort(); //将属性排序且转换为数组.
+                return capitalLetter;
+            }
+            let letterSort = addLetter(mailList);
+
+            //将排好序的数据写入页面
+            let dlNode = document.querySelector('dl.original');
+            let dtNode = document.querySelector('dt');
+            let ddNode = document.querySelector('dd');
+
+            function insertElement() {
+                /*for (let value in letter) {//当返回数组时
+                    let dtCopy = dtNode.cloneNode(false);
+                    dtCopy.innerText = value;
+                    document.body.appendChild(dtCopy);
+                    for (let valueInside of letter[value]) {
+                        //                        console.log(valueInside.name)不能使用数组下标的访问方式
+                        let ddCopy = ddNode.cloneNode(true);
+                        let ddCopyA = ddCopy.querySelector('a');
+                        ddCopyA.innerText = valueInside.name;
+                        document.body.appendChild(ddCopy);
+                    }
+                }*/
+                let dlCpoy = dlNode.cloneNode(false);
+                dlNode.style.display = 'none';
+                dlCpoy.style.display='block';//去掉克隆的样式
+                dlCpoy.classList.add('dl-copy');//为了和搜索的区分
+                document.body.appendChild(dlCpoy);
+                letterSort.forEach(
+                    (currentValue, index, arr) => {
+                        let dtCopy = dtNode.cloneNode(false);
+                        dtCopy.innerText = currentValue;
+                        dlCpoy.appendChild(dtCopy);
+                        for (let valueInside of letter[currentValue]) {
+                            let ddCopy = ddNode.cloneNode(true);
+                            let ddCopyA = ddCopy.querySelector('a');
+                            ddCopyA.innerText = valueInside.name;
+                            dlCpoy.appendChild(ddCopy);
+                        }
+                    }
+                );
+            }
+            insertElement(letterSort);
+            //滑动提示条
+            function scrollBar() {
+                let scrollList = document.querySelector('div.list>ul');
+                letterSort.forEach(
+                    (currentValue, index, arr) => {
+                        let scrollLi = document.createElement('li');
+                        scrollLi.innerText = currentValue;
+                        scrollLi.style.fontSize = '0.18rem';
+                        scrollLi.style.color = 'aqua';
+                        scrollList.appendChild(scrollLi);
+                    }
+                );
+            }
+            scrollBar();
+            //匹配输入
+            let search = document.querySelector('input');
+            search.onkeyup = function() {
+                let inputValue = this.value.trim(); //将输入字符去空
+                let searchList = mailList.filter(
+                    value => {
+                        return value.name.includes(inputValue);
+                    }
+                );
+                let preventDlCopy=document.querySelector('dl.dl-copy');
+                letterSort = null;
+                document.body.removeChild(preventDlCopy);
+                letterSort = addLetter(searchList);
+                insertElement();
+            }
+
+        }
+        window.addEventListener('load', handle);
+
+    </script>
+</head>
+
+<body>
+    <input type="text" value="" />
+    <div class="dock"></div>
+    <div class="search"></div>
+    <dl class="original">
+        <dt>A</dt>
+        <dd><a href="tel:10086">张三</a>
+        </dd>
+    </dl>
+    <div class="contain">
+        <div class="list">
+            <ul></ul>
+        </div>
+    </div>
+</body>
+
+</html>
